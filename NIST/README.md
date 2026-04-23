@@ -89,50 +89,155 @@ flowchart TB
 
 ---
 
-## 각 시리즈 상세
+## 상세 안내
 
 ### 한눈에 보기
 
+아래 표는 위 다이어그램의 위계 순서(프레임워크 → 컨트롤 → 가이드라인 → 실무 구현 → 표준 → 기타)로 정렬되어 있습니다.
+
 | 시리즈 | 성격 | 문서 수 | 핵심 키워드 | 링크 |
 |--------|------|---------|------------|------|
-| **FIPS** | 연방 표준 (의무) | 12건 | AES, SHA, 암호모듈, 보안분류 | [FIPS](https://csrc.nist.gov/publications/fips) |
-| **SP 800** | 가이드라인 (권고) | 220건+ | 컨트롤, RMF, ZTA, 침해대응, 암호 | [SP 800](https://csrc.nist.gov/publications/sp800) |
-| **SP 1800** | 실무 구현 사례 | 41건 | 랜섬웨어, ZTA 구현, IoT, PQC | [SP 1800](https://csrc.nist.gov/publications/sp1800) |
-| **IR** | 연구/분석 보고서 | 326건+ | ERM, IoT, 신기술 분석 | [IR](https://csrc.nist.gov/publications/ir) |
-| **CSWP** | 백서 | 55건 | 신규 주제, CSF/PF 원문 | [CSWP](https://csrc.nist.gov/publications/white-papers) |
 | **CSF 2.0** | 사이버보안 프레임워크 | — | 6 Functions, 22 Categories, 106 Subcategories | [CSF](https://www.nist.gov/cyberframework) |
 | **PF 1.0** | 프라이버시 프레임워크 | — | 5 Functions | [PF](https://www.nist.gov/privacy-framework) |
+| **SP 800-53** | 보안/프라이버시 컨트롤 | 1,196 컨트롤 | 20 Families, 4 Baselines | [SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) |
+| **SP 800** | 가이드라인 (권고) | 220건+ | 컨트롤, RMF, ZTA, 침해대응, 암호 | [SP 800](https://csrc.nist.gov/publications/sp800) |
+| **SP 1800** | 실무 구현 사례 | 41건 | 랜섬웨어, ZTA 구현, IoT, PQC | [SP 1800](https://csrc.nist.gov/publications/sp1800) |
+| **FIPS** | 연방 표준 (의무) | 12건 | AES, SHA, 암호모듈, 보안분류 | [FIPS](https://csrc.nist.gov/publications/fips) |
+| **IR** | 연구/분석 보고서 | 326건+ | ERM, IoT, 신기술 분석 | [IR](https://csrc.nist.gov/publications/ir) |
+| **CSWP** | 백서 | 55건 | 신규 주제, CSF/PF 원문 | [CSWP](https://csrc.nist.gov/publications/white-papers) |
 
 > 아래 각 항목을 클릭하면 상세 내용을 확인할 수 있습니다.
 
 ---
 
+### 프레임워크 — 무엇을 해야 하는가
+
 <details>
-<summary><h3>1. FIPS (Federal Information Processing Standards)</h3></summary>
+<summary><h4>Cybersecurity Framework (CSF) 2.0</h4></summary>
 
-연방 표준으로, 미국 연방기관은 **의무 준수** 대상입니다. FISMA에 의해 NIST에 표준 개발 권한이 부여되었습니다.
+| 항목 | 내용 |
+|------|------|
+| **발행일** | 2024년 2월 26일 |
+| **이전 버전** | CSF 1.1 (2018년) |
+| **URL** | https://www.nist.gov/cyberframework |
 
-> **FIPS와 SP의 차이:** FIPS는 "무엇을 해야 하는가"(의무), SP는 "어떻게 해야 하는가"(권고). 예: FIPS 200이 최소 보안 요구사항을 정의하면, SP 800-53이 그 요구사항을 충족하기 위한 구체적 보안 컨트롤을 제공합니다.
+CSF는 NIST의 다양한 문서를 **하나의 체계**로 엮는 최상위 프레임워크입니다.
 
-| 번호 | 제목 | 내용 |
-|------|------|------|
-| FIPS 140-3 | Security Requirements for Cryptographic Modules | 암호 모듈 보안 요구사항. 모든 연방 암호 모듈이 준수해야 하는 표준 |
-| FIPS 180-4 | Secure Hash Standard (SHS) | SHA-1, SHA-224, SHA-256, SHA-384, SHA-512 해시 함수 표준 |
-| FIPS 186-5 | Digital Signature Standard (DSS) | 디지털 서명 알고리즘 표준 (RSA, ECDSA, EdDSA) |
-| FIPS 197 | Advanced Encryption Standard (AES) | AES 암호화 알고리즘 표준 |
-| FIPS 198-1 | The Keyed-Hash Message Authentication Code (HMAC) | HMAC 표준 |
-| FIPS 199 | Standards for Security Categorization | 정보/정보시스템의 보안 분류 기준 (LOW/MODERATE/HIGH) |
-| FIPS 200 | Minimum Security Requirements | 연방 정보시스템 최소 보안 요구사항 |
-| FIPS 201-3 | Personal Identity Verification (PIV) | 연방 직원/계약자 신원확인 표준 |
-| FIPS 202 | SHA-3 Standard | SHA-3 해시 함수 표준 |
-| FIPS 203 | ML-KEM (Module-Lattice-Based Key-Encapsulation) | 양자내성 키 캡슐화 표준 |
-| FIPS 204 | ML-DSA (Module-Lattice-Based Digital Signature) | 양자내성 디지털 서명 표준 |
-| FIPS 205 | SLH-DSA (Stateless Hash-Based Digital Signature) | 양자내성 해시 기반 서명 표준 |
+**구조: 6 Functions → Categories → Subcategories**
+
+| Function | 코드 | 설명 | Categories |
+|----------|------|------|-----------|
+| **Govern** | GV | 조직의 사이버보안 리스크 관리 전략, 기대치, 정책을 수립하고 모니터링. **CSF 2.0에서 신설** | 6개 |
+| **Identify** | ID | 현재의 사이버보안 리스크를 이해 — 자산, 취약점, 위협 식별 | 3개 |
+| **Protect** | PR | 보안 위험을 관리하기 위한 보호조치 적용 — 접근제어, 교육, 데이터 보안 | 5개 |
+| **Detect** | DE | 사이버보안 공격과 침해를 탐지 — 지속적 모니터링, 이상 분석 | 2개 |
+| **Respond** | RS | 탐지된 사이버보안 사고에 대응 — 사고 관리, 분석, 완화, 보고 | 4개 |
+| **Recover** | RC | 사이버보안 사고로 영향받은 자산과 운영을 복구 | 2개 |
+
+> **총 22 Categories, 106 Subcategories**
+
+```
+CSF 2.0 계층 구조 예시:
+
+GV (Govern)
+├── GV.OC (Organizational Context)
+│   ├── GV.OC-01: 조직의 미션이 이해되고 사이버보안 리스크 관리에 반영
+│   ├── GV.OC-02: 내부/외부 이해관계자가 파악되고 그들의 요구사항이 이해됨
+│   └── ...
+├── GV.RM (Risk Management Strategy)
+│   ├── GV.RM-01: 리스크 관리 목표가 수립되고 이해관계자의 동의를 받음
+│   └── ...
+├── GV.RR (Roles, Responsibilities, and Authorities)
+├── GV.PO (Policy)
+├── GV.OV (Oversight)
+└── GV.SC (Cybersecurity Supply Chain Risk Management)
+```
+
+**CSF의 활용 방식**
+
+1. **Current Profile**: 현재 사이버보안 상태를 CSF 항목으로 매핑
+2. **Target Profile**: 목표 사이버보안 상태를 정의
+3. **Gap Analysis**: Current vs Target 비교 → 우선순위 도출
+4. **Implementation Tiers** (Tier 1~4): 조직의 리스크 관리 성숙도 수준
 
 </details>
 
 <details>
-<summary><h3>2. SP 800 시리즈 — 가이드라인 및 권고사항 (220건+)</h3></summary>
+<summary><h4>Privacy Framework (PF) 1.0</h4></summary>
+
+| 항목 | 내용 |
+|------|------|
+| **발행일** | 2020년 1월 16일 |
+| **차기 버전** | PF 1.1 (Initial Public Draft 공개, 최종판 발행 예정) |
+| **URL** | https://www.nist.gov/privacy-framework |
+
+CSF와 유사한 구조로, 프라이버시 리스크 관리를 위한 프레임워크입니다.
+
+**구조: 5 Functions**
+
+| Function | 설명 |
+|----------|------|
+| **Identify-P** | 프라이버시 리스크 관리를 위한 조직적 이해 |
+| **Govern-P** | 프라이버시 거버넌스 체계 |
+| **Control-P** | 데이터 처리에 대한 관리 활동 |
+| **Communicate-P** | 데이터 처리 관행에 대한 이해관계자 소통 |
+| **Protect-P** | 데이터 보호를 위한 기술적/관리적 조치 |
+
+</details>
+
+---
+
+### 컨트롤 — 어떤 통제를 적용할 것인가
+
+<details>
+<summary><h4>SP 800-53 Rev. 5: 보안 컨트롤 체계</h4></summary>
+
+SP 800-53은 NIST 체계에서 가장 핵심적인 문서입니다. CSF의 추상적 목표를 구체적인 **보안 컨트롤**로 변환합니다.
+
+**20개 컨트롤 패밀리**
+
+| 코드 | 패밀리 | 설명 |
+|------|--------|------|
+| AC | Access Control | 접근 제어 정책 및 메커니즘 |
+| AT | Awareness and Training | 보안 교육 및 인식 |
+| AU | Audit and Accountability | 감사 로깅, 검토, 보존 |
+| CA | Assessment, Authorization, and Monitoring | 보안 평가 및 인가 |
+| CM | Configuration Management | 구성 기준선 및 변경 통제 |
+| CP | Contingency Planning | 사업 연속성 및 재해 복구 |
+| IA | Identification and Authentication | 신원 확인 메커니즘 |
+| IR | Incident Response | 사고 탐지, 처리, 보고 |
+| MA | Maintenance | 시스템 유지보수 |
+| MP | Media Protection | 매체 접근, 표시, 저장, 폐기 |
+| PE | Physical and Environmental Protection | 물리적 접근 및 환경 통제 |
+| PL | Planning | 보안 계획 및 시스템 보안 계획서 |
+| PM | Program Management | 조직 차원의 정보보안 프로그램 |
+| PS | Personnel Security | 인력 심사 및 접근 계약 |
+| PT | PII Processing and Transparency | 개인정보 처리 및 투명성 |
+| RA | Risk Assessment | 위험 식별, 분석, 대응 |
+| SA | System and Services Acquisition | 안전한 개발 및 공급망 |
+| SC | System and Communications Protection | 암호화 및 통신 보호 |
+| SI | System and Information Integrity | 결함 교정, 모니터링, 악성코드 보호 |
+| SR | Supply Chain Risk Management | 공급망 통제 및 출처 |
+
+**기준선 (Baselines)**
+
+SP 800-53B에서 정의하는 기준선은 시스템의 영향도(Impact Level)에 따라 적용할 컨트롤 세트를 지정합니다.
+
+| 기준선 | 영향도 | 대략적 컨트롤 수 | 적용 상황 |
+|--------|--------|----------------|----------|
+| LOW | 제한적 피해 | ~155개 | 기밀성/무결성/가용성 손실 시 피해가 제한적 |
+| MODERATE | 심각한 피해 | ~325개 | 피해가 심각한 수준 |
+| HIGH | 치명적 피해 | ~380개 | 피해가 치명적/재앙적 |
+| PRIVACY | 개인정보 | ~110개 | PII를 처리하는 시스템 |
+
+</details>
+
+---
+
+### 가이드라인 — 어떻게 구현할 것인가
+
+<details>
+<summary><h4>SP 800 시리즈 — 가이드라인 및 권고사항 (220건+)</h4></summary>
 
 NIST 사이버보안의 핵심 시리즈입니다. 번호는 800-12부터 800-236까지 있으며, 주요 문서를 주제별로 분류하면:
 
@@ -208,8 +313,12 @@ NIST 사이버보안의 핵심 시리즈입니다. 번호는 800-12부터 800-23
 
 </details>
 
+---
+
+### 실무 구현 — 실제 환경 구축 사례
+
 <details>
-<summary><h3>3. SP 1800 시리즈 — 실무 구현 가이드 (41건)</h3></summary>
+<summary><h4>SP 1800 시리즈 — 실무 구현 가이드 (41건)</h4></summary>
 
 NCCoE(National Cybersecurity Center of Excellence)에서 발행합니다. SP 800이 "무엇을, 왜"를 설명한다면, SP 1800은 **"실제로 어떻게 구현하는가"** 를 보여줍니다.
 
@@ -228,8 +337,36 @@ NCCoE(National Cybersecurity Center of Excellence)에서 발행합니다. SP 800
 
 </details>
 
+---
+
+### 연방 표준 및 기타
+
 <details>
-<summary><h3>4. NIST IR — 연구/분석 보고서 (326건+)</h3></summary>
+<summary><h4>FIPS — 연방 정보처리 표준 (12건)</h4></summary>
+
+연방 표준으로, 미국 연방기관은 **의무 준수** 대상입니다. FISMA에 의해 NIST에 표준 개발 권한이 부여되었습니다.
+
+> **FIPS와 SP의 차이:** FIPS는 "무엇을 해야 하는가"(의무), SP는 "어떻게 해야 하는가"(권고). 예: FIPS 200이 최소 보안 요구사항을 정의하면, SP 800-53이 그 요구사항을 충족하기 위한 구체적 보안 컨트롤을 제공합니다.
+
+| 번호 | 제목 | 내용 |
+|------|------|------|
+| FIPS 140-3 | Security Requirements for Cryptographic Modules | 암호 모듈 보안 요구사항. 모든 연방 암호 모듈이 준수해야 하는 표준 |
+| FIPS 180-4 | Secure Hash Standard (SHS) | SHA-1, SHA-224, SHA-256, SHA-384, SHA-512 해시 함수 표준 |
+| FIPS 186-5 | Digital Signature Standard (DSS) | 디지털 서명 알고리즘 표준 (RSA, ECDSA, EdDSA) |
+| FIPS 197 | Advanced Encryption Standard (AES) | AES 암호화 알고리즘 표준 |
+| FIPS 198-1 | The Keyed-Hash Message Authentication Code (HMAC) | HMAC 표준 |
+| FIPS 199 | Standards for Security Categorization | 정보/정보시스템의 보안 분류 기준 (LOW/MODERATE/HIGH) |
+| FIPS 200 | Minimum Security Requirements | 연방 정보시스템 최소 보안 요구사항 |
+| FIPS 201-3 | Personal Identity Verification (PIV) | 연방 직원/계약자 신원확인 표준 |
+| FIPS 202 | SHA-3 Standard | SHA-3 해시 함수 표준 |
+| FIPS 203 | ML-KEM (Module-Lattice-Based Key-Encapsulation) | 양자내성 키 캡슐화 표준 |
+| FIPS 204 | ML-DSA (Module-Lattice-Based Digital Signature) | 양자내성 디지털 서명 표준 |
+| FIPS 205 | SLH-DSA (Stateless Hash-Based Digital Signature) | 양자내성 해시 기반 서명 표준 |
+
+</details>
+
+<details>
+<summary><h4>NIST IR — 연구/분석 보고서 (326건+)</h4></summary>
 
 특정 주제에 대한 연구 결과나 심층 분석을 담습니다. 일부는 이후 SP 시리즈로 발전하기도 합니다.
 
@@ -242,134 +379,12 @@ NCCoE(National Cybersecurity Center of Excellence)에서 발행합니다. SP 800
 </details>
 
 <details>
-<summary><h3>5. CSWP — 사이버보안 백서 (55건)</h3></summary>
+<summary><h4>CSWP — 사이버보안 백서 (55건)</h4></summary>
 
 신규 주제에 대한 의견 제시나 프레임워크 문서를 포함합니다.
 
 > CSF 2.0과 Privacy Framework도 CSWP로 분류됩니다.  
 > 예: CSWP 29 = CSF 2.0, CSWP 10 = Privacy Framework 1.0
-
-</details>
-
----
-
-## 핵심 프레임워크
-
-<details>
-<summary><h3>Cybersecurity Framework (CSF) 2.0</h3></summary>
-
-| 항목 | 내용 |
-|------|------|
-| **발행일** | 2024년 2월 26일 |
-| **이전 버전** | CSF 1.1 (2018년) |
-| **URL** | https://www.nist.gov/cyberframework |
-
-CSF는 NIST의 다양한 문서를 **하나의 체계**로 엮는 최상위 프레임워크입니다.
-
-#### 구조: 6 Functions → Categories → Subcategories
-
-| Function | 코드 | 설명 | Categories |
-|----------|------|------|-----------|
-| **Govern** | GV | 조직의 사이버보안 리스크 관리 전략, 기대치, 정책을 수립하고 모니터링. **CSF 2.0에서 신설** | 6개 |
-| **Identify** | ID | 현재의 사이버보안 리스크를 이해 — 자산, 취약점, 위협 식별 | 3개 |
-| **Protect** | PR | 보안 위험을 관리하기 위한 보호조치 적용 — 접근제어, 교육, 데이터 보안 | 5개 |
-| **Detect** | DE | 사이버보안 공격과 침해를 탐지 — 지속적 모니터링, 이상 분석 | 2개 |
-| **Respond** | RS | 탐지된 사이버보안 사고에 대응 — 사고 관리, 분석, 완화, 보고 | 4개 |
-| **Recover** | RC | 사이버보안 사고로 영향받은 자산과 운영을 복구 | 2개 |
-
-> **총 22 Categories, 106 Subcategories**
-
-```
-CSF 2.0 계층 구조 예시:
-
-GV (Govern)
-├── GV.OC (Organizational Context)
-│   ├── GV.OC-01: 조직의 미션이 이해되고 사이버보안 리스크 관리에 반영
-│   ├── GV.OC-02: 내부/외부 이해관계자가 파악되고 그들의 요구사항이 이해됨
-│   └── ...
-├── GV.RM (Risk Management Strategy)
-│   ├── GV.RM-01: 리스크 관리 목표가 수립되고 이해관계자의 동의를 받음
-│   └── ...
-├── GV.RR (Roles, Responsibilities, and Authorities)
-├── GV.PO (Policy)
-├── GV.OV (Oversight)
-└── GV.SC (Cybersecurity Supply Chain Risk Management)
-```
-
-#### CSF의 활용 방식
-
-1. **Current Profile**: 현재 사이버보안 상태를 CSF 항목으로 매핑
-2. **Target Profile**: 목표 사이버보안 상태를 정의
-3. **Gap Analysis**: Current vs Target 비교 → 우선순위 도출
-4. **Implementation Tiers** (Tier 1~4): 조직의 리스크 관리 성숙도 수준
-
-</details>
-
-<details>
-<summary><h3>Privacy Framework (PF) 1.0</h3></summary>
-
-| 항목 | 내용 |
-|------|------|
-| **발행일** | 2020년 1월 16일 |
-| **차기 버전** | PF 1.1 (Initial Public Draft 공개, 최종판 발행 예정) |
-| **URL** | https://www.nist.gov/privacy-framework |
-
-CSF와 유사한 구조로, 프라이버시 리스크 관리를 위한 프레임워크입니다.
-
-#### 구조: 5 Functions
-
-| Function | 설명 |
-|----------|------|
-| **Identify-P** | 프라이버시 리스크 관리를 위한 조직적 이해 |
-| **Govern-P** | 프라이버시 거버넌스 체계 |
-| **Control-P** | 데이터 처리에 대한 관리 활동 |
-| **Communicate-P** | 데이터 처리 관행에 대한 이해관계자 소통 |
-| **Protect-P** | 데이터 보호를 위한 기술적/관리적 조치 |
-
-</details>
-
----
-
-<details>
-<summary><h2>SP 800-53: 보안 컨트롤 체계</h2></summary>
-
-SP 800-53은 NIST 체계에서 가장 핵심적인 문서입니다. CSF의 추상적 목표를 구체적인 **보안 컨트롤**로 변환합니다.
-
-### 20개 컨트롤 패밀리
-
-| 코드 | 패밀리 | 설명 |
-|------|--------|------|
-| AC | Access Control | 접근 제어 정책 및 메커니즘 |
-| AT | Awareness and Training | 보안 교육 및 인식 |
-| AU | Audit and Accountability | 감사 로깅, 검토, 보존 |
-| CA | Assessment, Authorization, and Monitoring | 보안 평가 및 인가 |
-| CM | Configuration Management | 구성 기준선 및 변경 통제 |
-| CP | Contingency Planning | 사업 연속성 및 재해 복구 |
-| IA | Identification and Authentication | 신원 확인 메커니즘 |
-| IR | Incident Response | 사고 탐지, 처리, 보고 |
-| MA | Maintenance | 시스템 유지보수 |
-| MP | Media Protection | 매체 접근, 표시, 저장, 폐기 |
-| PE | Physical and Environmental Protection | 물리적 접근 및 환경 통제 |
-| PL | Planning | 보안 계획 및 시스템 보안 계획서 |
-| PM | Program Management | 조직 차원의 정보보안 프로그램 |
-| PS | Personnel Security | 인력 심사 및 접근 계약 |
-| PT | PII Processing and Transparency | 개인정보 처리 및 투명성 |
-| RA | Risk Assessment | 위험 식별, 분석, 대응 |
-| SA | System and Services Acquisition | 안전한 개발 및 공급망 |
-| SC | System and Communications Protection | 암호화 및 통신 보호 |
-| SI | System and Information Integrity | 결함 교정, 모니터링, 악성코드 보호 |
-| SR | Supply Chain Risk Management | 공급망 통제 및 출처 |
-
-### 기준선 (Baselines)
-
-SP 800-53B에서 정의하는 기준선은 시스템의 영향도(Impact Level)에 따라 적용할 컨트롤 세트를 지정합니다.
-
-| 기준선 | 영향도 | 대략적 컨트롤 수 | 적용 상황 |
-|--------|--------|----------------|----------|
-| LOW | 제한적 피해 | ~155개 | 기밀성/무결성/가용성 손실 시 피해가 제한적 |
-| MODERATE | 심각한 피해 | ~325개 | 피해가 심각한 수준 |
-| HIGH | 치명적 피해 | ~380개 | 피해가 치명적/재앙적 |
-| PRIVACY | 개인정보 | ~110개 | PII를 처리하는 시스템 |
 
 </details>
 
