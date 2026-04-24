@@ -126,7 +126,8 @@ flowchart TB
 | **CSF 2.0** | 사이버보안 프레임워크 | — | 6 Functions, 22 Categories, 106 Subcategories | [CSF](https://www.nist.gov/cyberframework) |
 | **PF 1.0** | 프라이버시 프레임워크 | — | 5 Functions | [PF](https://www.nist.gov/privacy-framework) |
 | **SP 800-53** | 보안/프라이버시 컨트롤 | 3건 (53/53A/53B) | 20 Families, 1,196 Controls, 4 Baselines | [SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) |
-| **SP 800** | 가이드라인 (권고) | 209건 | RMF, CUI, ZTA, 침해대응, 암호 | [SP 800](https://csrc.nist.gov/publications/sp800) |
+| **SP 800-37** | 위험관리 프레임워크 (RMF) | 1건 | 7단계, 47 Tasks — 보안 운영 프로세스의 중심축 | [SP 800-37](https://csrc.nist.gov/pubs/sp/800/37/r2/final) |
+| **SP 800** | 가이드라인 (권고) | 209건 | CUI, ZTA, 침해대응, 암호 등 | [SP 800](https://csrc.nist.gov/publications/sp800) |
 | **SP 1800** | 실무 구현 사례 | 37건 | 랜섬웨어, ZTA 구현, IoT, PQC | [SP 1800](https://csrc.nist.gov/publications/sp1800) |
 | **FIPS** | 연방 표준 (의무) | 13건 | AES, SHA, 암호모듈, 보안분류 | [FIPS](https://csrc.nist.gov/publications/fips) |
 | **IR** | 연구/분석 보고서 | 266건 | ERM, IoT, 신기술 분석 | [IR](https://csrc.nist.gov/publications/ir) |
