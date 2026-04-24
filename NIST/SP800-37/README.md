@@ -70,6 +70,7 @@ RMF는 각 Task마다 **주요 책임 역할**을 지정합니다.
 | **System Security Officer (SSO)** | 시스템 보안의 실무 책임자 |
 | **Chief Information Officer (CIO)** | 조직의 정보기술 및 보안 전략 총괄 |
 | **Senior Agency Information Security Officer (SAISO)** | 조직 수준 정보보안 담당 |
+| **Senior Agency Official for Privacy (SAOP)** | 조직의 프라이버시 프로그램 총괄 — Rev. 2에서 강화된 프라이버시 통합의 핵심 역할 |
 | **Risk Executive** | 조직의 리스크 관리 전략 및 허용수준 결정 |
 | **Control Assessor** | 컨트롤 평가 수행 (독립성 요구) |
 | **Information Owner/Steward** | 정보 유형 및 생명주기 관리 |
