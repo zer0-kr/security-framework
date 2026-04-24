@@ -106,9 +106,9 @@ flowchart TB
 | **PF 1.0** | 프라이버시 프레임워크 | — | 5 Functions | [PF](https://www.nist.gov/privacy-framework) |
 | **SP 800-53** | 보안/프라이버시 컨트롤 | 3건 (53/53A/53B) | 20 Families, 1,196 Controls, 4 Baselines | [SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) |
 | **SP 800** | 가이드라인 (권고) | 209건 | RMF, CUI, ZTA, 침해대응, 암호 | [SP 800](https://csrc.nist.gov/publications/sp800) |
-| **SP 1800** | 실무 구현 사례 | 41건 | 랜섬웨어, ZTA 구현, IoT, PQC | [SP 1800](https://csrc.nist.gov/publications/sp1800) |
-| **FIPS** | 연방 표준 (의무) | 12건 | AES, SHA, 암호모듈, 보안분류 | [FIPS](https://csrc.nist.gov/publications/fips) |
-| **IR** | 연구/분석 보고서 | 326건+ | ERM, IoT, 신기술 분석 | [IR](https://csrc.nist.gov/publications/ir) |
+| **SP 1800** | 실무 구현 사례 | 37건 | 랜섬웨어, ZTA 구현, IoT, PQC | [SP 1800](https://csrc.nist.gov/publications/sp1800) |
+| **FIPS** | 연방 표준 (의무) | 13건 | AES, SHA, 암호모듈, 보안분류 | [FIPS](https://csrc.nist.gov/publications/fips) |
+| **IR** | 연구/분석 보고서 | 266건 | ERM, IoT, 신기술 분석 | [IR](https://csrc.nist.gov/publications/ir) |
 | **CSWP** | 백서 | 55건 | 신규 주제, CSF/PF 원문 | [CSWP](https://csrc.nist.gov/publications/white-papers) |
 
 > 아래 각 항목을 클릭하면 상세 내용을 확인할 수 있습니다.
@@ -325,7 +325,7 @@ NIST 사이버보안의 핵심 시리즈입니다. 번호는 800-12부터 800-23
 ### 실무 구현 — 어떻게 구현할 것인가
 
 <details>
-<summary><b>SP 1800 시리즈 — 실무 구현 가이드 (41건)</b></summary>
+<summary><b>SP 1800 시리즈 — 실무 구현 가이드 (37건)</b></summary>
 
 NCCoE(National Cybersecurity Center of Excellence)에서 발행합니다. SP 800이 주제별 요구사항과 절차를 설명한다면, SP 1800은 **실제 제품과 아키텍처를 사용해 어떻게 구현하는지** 보여줍니다.
 
@@ -349,7 +349,7 @@ NCCoE(National Cybersecurity Center of Excellence)에서 발행합니다. SP 800
 ### 연방 표준 및 기타
 
 <details>
-<summary><b>FIPS — 연방 정보처리 표준 (12건)</b></summary>
+<summary><b>FIPS — 연방 정보처리 표준 (13건)</b></summary>
 
 연방 표준으로, 미국 연방기관은 **의무 준수** 대상입니다. FISMA에 의해 NIST에 표준 개발 권한이 부여되었습니다.
 
@@ -357,7 +357,8 @@ NCCoE(National Cybersecurity Center of Excellence)에서 발행합니다. SP 800
 
 | 번호 | 제목 | 내용 |
 |------|------|------|
-| FIPS 140-3 | Security Requirements for Cryptographic Modules | 암호 모듈 보안 요구사항. 모든 연방 암호 모듈이 준수해야 하는 표준 |
+| FIPS 140-2 | Security Requirements for Cryptographic Modules | 암호 모듈 보안 요구사항 (기존 표준, 140-3으로 전환 중이나 기존 인증 유효) |
+| FIPS 140-3 | Security Requirements for Cryptographic Modules | 암호 모듈 보안 요구사항 (현행 표준, 신규 인증은 140-3 기준) |
 | FIPS 180-4 | Secure Hash Standard (SHS) | SHA-1, SHA-224, SHA-256, SHA-384, SHA-512 해시 함수 표준 |
 | FIPS 186-5 | Digital Signature Standard (DSS) | 디지털 서명 알고리즘 표준 (RSA, ECDSA, EdDSA) |
 | FIPS 197 | Advanced Encryption Standard (AES) | AES 암호화 알고리즘 표준 |
@@ -373,7 +374,7 @@ NCCoE(National Cybersecurity Center of Excellence)에서 발행합니다. SP 800
 </details>
 
 <details>
-<summary><b>NIST IR — 연구/분석 보고서 (326건+)</b></summary>
+<summary><b>NIST IR — 연구/분석 보고서 (266건)</b></summary>
 
 특정 주제에 대한 연구 결과나 심층 분석을 담습니다. 일부는 이후 SP 시리즈로 발전하기도 합니다.
 
