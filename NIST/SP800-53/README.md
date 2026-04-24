@@ -6,7 +6,7 @@
 |------|------|
 | **정식 명칭** | Security and Privacy Controls for Information Systems and Organizations |
 | **문서 번호** | SP 800-53 Revision 5, Update 1 |
-| **발행일** | 2020년 12월 10일 (Rev. 5), 2024년 11월 (Update 1) |
+| **발행일** | 2020년 9월 (Rev. 5 최초 발행), 이후 Update 1 반영 |
 | **대상** | 연방 정보시스템 및 조직 (민간 부문에서도 널리 참조) |
 | **원문** | https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final |
 
