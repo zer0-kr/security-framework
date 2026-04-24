@@ -38,12 +38,16 @@ CSF 2.0은 세 가지 핵심 요소로 구성됩니다:
 
 ### 2. CSF Profile
 
-조직의 현재 또는 목표 사이버보안 상태를 CSF Core에 매핑한 것입니다.
+CSF Core의 성과 항목에 조직의 상태를 매핑한 것입니다. 두 종류가 있습니다:
 
+**Organizational Profile** (개별 조직용)
 - **Current Profile**: 현재 달성하고 있는 성과
 - **Target Profile**: 달성하고자 하는 목표 성과
+- 두 Profile을 비교하는 **Gap Analysis**를 통해 개선 우선순위를 도출합니다.
 
-두 Profile을 비교하는 **Gap Analysis**를 통해 개선 우선순위를 도출합니다.
+**Community Profile** (업종/사용 사례 공유용, CSF 2.0에서 신설)
+- 특정 업종(예: 금융, 의료)이나 사용 사례에 맞게 작성된 공유 가능한 기준선
+- 조직이 자체 Organizational Profile을 만들 때 출발점으로 활용할 수 있습니다.
 
 ### 3. CSF Tiers (Tier 1~4)
 
