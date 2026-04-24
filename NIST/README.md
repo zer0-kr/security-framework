@@ -176,7 +176,7 @@ GV (Govern)
 | **차기 버전** | PF 1.1 (Initial Public Draft 공개, 최종판 발행 예정) |
 | **URL** | https://www.nist.gov/privacy-framework |
 
-CSF와 유사한 구조로, 프라이버시 리스크 관리를 위한 프레임워크입니다.
+CSF와 유사한 구조로, 프라이버시 리스크 관리를 위한 프레임워크입니다. 전체 구조(100 Subcategories 포함)는 [PF 1.0 상세 문서](./PF-1.0/README.md)를 참고하세요.
 
 **구조: 5 Functions**
 
