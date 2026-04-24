@@ -39,12 +39,7 @@ flowchart LR
 
 ### 시리즈 간 관계
 
-아래 다이어그램은 위에서 아래로 **추상화 수준이 낮아지는** 4계층 구조입니다.
-
-1. **프레임워크** — 무엇을 해야 하는가 (CSF, PF)
-2. **컨트롤** — 어떤 통제를 적용할 것인가 (SP 800-53)
-3. **가이드라인** — 주제별 상세 지침 (SP 800 시리즈)
-4. **실무 구현** — 어떻게 구현할 것인가 (SP 1800 시리즈)
+아래 다이어그램은 NIST 사이버보안 체계의 핵심 문서 간 관계를 보여줍니다. 왼쪽의 **RMF(SP 800-37)**가 전체 프로세스를 운영하는 축이며, 오른쪽이 각 단계에서 참조하는 문서입니다.
 
 ```mermaid
 flowchart TB
@@ -53,14 +48,26 @@ flowchart TB
         PF["<b>Privacy Framework</b>"]
     end
 
+    subgraph RMF["SP 800-37 · RMF — 보안 운영 프로세스"]
+        R1["1. Prepare<br/>준비"]
+        R2["2. Categorize<br/>분류"]
+        R3["3. Select<br/>선택"]
+        R4["4. Implement<br/>구현"]
+        R5["5. Assess<br/>평가"]
+        R6["6. Authorize<br/>인가"]
+        R7["7. Monitor<br/>모니터링"]
+        R1 --> R2 --> R3 --> R4 --> R5 --> R6 --> R7
+        R7 -.-> R1
+    end
+
     subgraph L2["컨트롤 — 어떤 통제를 적용할 것인가"]
-        CTRL["<b>SP 800-53 Rev. 5</b><br/>보안/프라이버시 컨트롤 카탈로그<br/>20 Families · 1,196 Controls"]
+        CTRL["<b>SP 800-53</b><br/>컨트롤 카탈로그<br/>20 Families · 1,014 Active"]
         ASSESS["<b>SP 800-53A</b><br/>평가 절차"]
         BASE["<b>SP 800-53B</b><br/>기준선 (LOW · MOD · HIGH · PRIVACY)"]
     end
 
     subgraph L3["가이드라인 — 주제별 상세 지침"]
-        SP800["<b>SP 800 시리즈</b><br/>주제별 상세 가이드<br/>RMF · CUI · ZTA · 침해대응 · 암호 등"]
+        SP800["<b>SP 800 시리즈</b><br/>주제별 상세 가이드<br/>CUI · ZTA · 침해대응 · 암호 등"]
     end
 
     subgraph L4["실무 구현 — 어떻게 구현할 것인가"]
@@ -73,12 +80,16 @@ flowchart TB
     PF -- "프라이버시 컨트롤 연계" --> CTRL
     CTRL --> ASSESS
     CTRL --> BASE
-    CTRL -- "상세 지침 참조" --> SP800
+
+    R2 -. "FIPS 199로 영향도 분류" .-> FIPS
+    R3 -. "기준선 선택" .-> BASE
+    R4 -. "컨트롤 구현" .-> CTRL
+    R4 -. "상세 지침 참조" .-> SP800
+    R5 -. "평가 절차 적용" .-> ASSESS
     SP800 -- "구현 예시" --> SP1800
-    FIPS -. "암호·분류 표준 근거" .-> CTRL
-    FIPS -. "의무 표준으로 참조" .-> SP800
 
     style L1 fill:none,stroke:#1a73e8,stroke-width:2px,color:#1a73e8
+    style RMF fill:none,stroke:#d32f2f,stroke-width:2px,color:#d32f2f
     style L2 fill:none,stroke:#e65100,stroke-width:2px,color:#e65100
     style L3 fill:none,stroke:#2e7d32,stroke-width:2px,color:#2e7d32
     style L4 fill:none,stroke:#558b2f,stroke-width:2px,color:#558b2f
@@ -90,7 +101,17 @@ flowchart TB
     style SP800 fill:#2e7d32,stroke:#1b5e20,color:#fff
     style SP1800 fill:#c8e6c9,stroke:#2e7d32,color:#333
     style FIPS fill:#37474f,stroke:#263238,color:#fff
+    style R1 fill:#d32f2f,stroke:#b71c1c,color:#fff
+    style R2 fill:#d32f2f,stroke:#b71c1c,color:#fff
+    style R3 fill:#d32f2f,stroke:#b71c1c,color:#fff
+    style R4 fill:#d32f2f,stroke:#b71c1c,color:#fff
+    style R5 fill:#d32f2f,stroke:#b71c1c,color:#fff
+    style R6 fill:#d32f2f,stroke:#b71c1c,color:#fff
+    style R7 fill:#d32f2f,stroke:#b71c1c,color:#fff
 ```
+
+> **RMF 7단계**가 NIST 체계를 운영하는 중심 프로세스입니다. 각 단계에서 해당 문서를 참조합니다:  
+> Categorize → FIPS 199 | Select → SP 800-53B | Implement → SP 800-53 + SP 800 시리즈 | Assess → SP 800-53A
 
 ---
 
