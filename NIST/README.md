@@ -126,7 +126,7 @@ flowchart TB
 | **이전 버전** | CSF 1.1 (2018년) |
 | **URL** | https://www.nist.gov/cyberframework |
 
-CSF는 NIST의 다양한 문서를 **하나의 체계**로 엮는 최상위 프레임워크입니다.
+CSF는 NIST의 다양한 문서를 **하나의 체계**로 엮는 최상위 프레임워크입니다. 전체 구조(106 Subcategories 포함)는 [CSF 2.0 상세 문서](./CSF-2.0/README.md)를 참고하세요.
 
 **구조: 6 Functions → Categories → Subcategories**
 
