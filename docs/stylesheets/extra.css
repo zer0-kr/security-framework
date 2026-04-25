@@ -31,7 +31,7 @@
 
 /* === Section headings: accent border === */
 .md-typeset h2 {
-  border-bottom: 2px solid var(--md-primary-fg-color);
+  border-bottom: 2px solid #30363d;
   padding-bottom: 0.3em;
   margin-top: 2em;
 }
@@ -51,17 +51,17 @@
 
 /* === Tables: polished and interactive === */
 .md-typeset table:not([class]) {
-  border-collapse: separate;
-  border-spacing: 0;
-  border: 1px solid #30363d;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1px solid #30363d !important;
   border-radius: 0.3rem;
   overflow: hidden;
   width: 100%;
 }
 
 .md-typeset table:not([class]) th {
-  background: #161b22;
-  color: #e6edf3;
+  background: #161b22 !important;
+  color: #e6edf3 !important;
   font-weight: 600;
   padding: 0.7em 1em;
   text-align: left;
@@ -69,7 +69,7 @@
 
 .md-typeset table:not([class]) td {
   padding: 0.7em 1em;
-  border-top: 1px solid #30363d;
+  border-top: 1px solid #30363d !important;
 }
 
 .md-typeset table:not([class]) tbody tr {
