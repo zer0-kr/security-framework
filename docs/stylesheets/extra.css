@@ -194,9 +194,22 @@
   background: #161b22 !important;
   color: #e6edf3 !important;
   border-radius: 2rem !important;
-  padding: 0.5rem 1rem !important;
+  padding: 0.6rem !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   z-index: 10;
+  font-size: 0 !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-top svg {
+  font-size: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 /* === Footer nav spacing === */
