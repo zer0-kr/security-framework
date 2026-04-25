@@ -22,23 +22,36 @@ OWASP(Open Worldwide Application Security Project)는 소프트웨어 보안 향
 
 OWASP를 처음 접한다면 아래 순서로 읽는 것을 권장합니다.
 
-```
-Step 1              Step 2              Step 3              Step 4
-위험 식별       →    검증 표준      →    테스트 방법    →    구현 가이드
-                                      
-📄 Top 10 2025      📄 ASVS v5.0        📄 WSTG v4.2        📄 Cheat Sheets
-(10대 웹 보안       (검증 요구사항,      (테스트 방법론,       (91개 구현
- 위험 목록)          3 Level)            카테고리별 기법)      가이드)
-```
+<div class="grid cards" markdown>
 
-| Step | 읽을 문서 | 이 단계에서 알게 되는 것 |
-|------|----------|----------------------|
-| **1. 위험 식별** | [Top 10 2025](./Top10-2025/README.md) | 웹 애플리케이션에서 가장 심각한 10대 보안 위험이 무엇인지 |
-| **2. 검증 표준** | [ASVS v5.0](./ASVS/README.md) | 애플리케이션이 보안 요구사항을 충족하는지 검증하는 기준 |
-| **3. 테스트 방법** | [WSTG v4.2](./WSTG/README.md) | ASVS 요구사항을 실제로 어떻게 테스트하는지 |
-| **4. 구현 가이드** | [Cheat Sheet Series](https://cheatsheetseries.owasp.org) | 특정 보안 통제를 코드로 어떻게 구현하는지 (91개 가이드) |
+-   :material-numeric-1-circle:{ .lg .middle } **위험 식별**
 
-> **Step 1~2까지 읽으면** OWASP 체계의 핵심을 이해한 것입니다. Step 3~4는 실무 적용 시 참고하세요.
+    ---
+
+    [Top 10 2025](./Top10-2025/README.md) — 웹 10대 보안 위험
+
+-   :material-numeric-2-circle:{ .lg .middle } **검증 표준**
+
+    ---
+
+    [ASVS v5.0](./ASVS/README.md) — 보안 검증 요구사항, 3 Level
+
+-   :material-numeric-3-circle:{ .lg .middle } **테스트 방법**
+
+    ---
+
+    [WSTG v4.2](./WSTG/README.md) — 카테고리별 테스트 기법
+
+-   :material-numeric-4-circle:{ .lg .middle } **구현 가이드**
+
+    ---
+
+    [Cheat Sheet Series](https://cheatsheetseries.owasp.org) — 91개 구현 가이드
+
+</div>
+
+!!! tip "핵심 경로"
+    **Step 1→2까지 읽으면** OWASP 체계의 핵심을 이해한 것입니다. Step 3→4는 실무 적용 시 참고하세요.
 
 추가로:
 - [OWASP 주요 프로젝트 목록](./projects.md) — Flagship/Production/Lab/Incubator 프로젝트
