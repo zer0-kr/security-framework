@@ -1,7 +1,7 @@
 /* === Header: dark premium gradient === */
 .md-header {
-  background: linear-gradient(135deg, #0d1117 0%, #161b22 40%, #1a237e 100%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background: #161b22 !important;
+  box-shadow: 0 1px 0 #30363d;
 }
 
 .md-tabs {
