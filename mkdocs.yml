@@ -114,4 +114,5 @@ nav:
       - 보안 검증:
           - ASVS v5.0: OWASP/ASVS/README.md
           - WSTG v4.2: OWASP/WSTG/README.md
-      - 프로젝트 목록: OWASP/projects.md
+      - 프로젝트:
+          - 목록: OWASP/projects.md
