@@ -44,6 +44,7 @@ Step 1                Step 2                Step 3                Step 4
 NIST 사이버보안/프라이버시 출판물은 **CSRC**(Computer Security Resource Center)를 통해 관리되며, 아래 시리즈로 분류됩니다.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '14px'}}}%%
 flowchart LR
     CSRC["<b>NIST CSRC</b><br/>사이버보안/프라이버시<br/>출판물"]
 
@@ -73,6 +74,7 @@ flowchart LR
 아래 다이어그램은 NIST 사이버보안 체계의 핵심 문서 간 관계를 보여줍니다. 왼쪽의 **RMF(SP 800-37)**가 전체 프로세스를 운영하는 축이며, 오른쪽이 각 단계에서 참조하는 문서입니다.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '14px'}}}%%
 flowchart TB
     subgraph L1["프레임워크 — 무엇을 해야 하는가"]
         CSF["<b>CSF 2.0</b><br/>Cybersecurity Framework"]

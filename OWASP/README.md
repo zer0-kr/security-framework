@@ -62,6 +62,7 @@ OWASP 프로젝트는 **성숙도**에 따라 분류됩니다:
 ## 핵심 프로젝트 간 관계
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '14px'}}}%%
 flowchart TB
     subgraph L1["위험 식별 — 무엇이 위험한가"]
         TOP10["<b>Top 10 2025</b><br/>웹 10대 보안 위험"]
