@@ -123,9 +123,23 @@
   margin-top: 0.8em;
 }
 
-/* === Homepage: full-width grid cards === */
+/* === Homepage: grid cards stand out === */
 .md-content .grid.cards {
   margin: 1.5em 0;
+}
+
+.md-content .grid.cards > ul > li {
+  border: 2px solid var(--md-primary-fg-color) !important;
+  border-radius: 0.5rem;
+}
+
+.md-content .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.md-content .grid.cards > ul > li p:first-child {
+  font-size: 1.1rem;
 }
 
 /* === Homepage: table document links stand out === */
