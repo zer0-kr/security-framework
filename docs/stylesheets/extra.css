@@ -60,8 +60,8 @@
 }
 
 .md-typeset table:not([class]) th {
-  background: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color);
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 40%, #1a237e 100%);
+  color: #fff;
   font-weight: 600;
   padding: 0.7em 1em;
   text-align: left;
