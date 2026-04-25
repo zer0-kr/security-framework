@@ -34,8 +34,6 @@ theme:
   icon:
     logo: material/shield-lock
   features:
-    - navigation.instant
-    - navigation.instant.progress
     - navigation.tabs
     - navigation.sections
     - navigation.expand
