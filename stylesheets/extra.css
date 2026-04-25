@@ -1,0 +1,218 @@
+/* === Header: dark premium gradient === */
+.md-header {
+  background: #161b22 !important;
+  box-shadow: 0 1px 0 #30363d;
+}
+
+.md-tabs {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
+}
+
+.md-search__form {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.md-search__form:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* === Base typography === */
+.md-typeset {
+  word-break: keep-all;
+  overflow-wrap: normal;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* === Section headings: accent border === */
+.md-typeset h2 {
+  border-bottom: 2px solid #30363d;
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+}
+
+/* === Blockquote: accent left border === */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-accent-fg-color);
+  background: var(--md-admonition-bg-color, rgba(0, 0, 0, 0.025));
+  padding: 0.8em 1.2em;
+  border-radius: 0 0.2rem 0.2rem 0;
+  margin: 1.5em 0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* === Tables: polished and interactive === */
+.md-typeset table:not([class]) {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1px solid #30363d !important;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.md-typeset table:not([class]) th {
+  background: #161b22 !important;
+  color: #e6edf3 !important;
+  font-weight: 600;
+  padding: 0.7em 1em;
+  text-align: left;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.7em 1em;
+  border-top: 1px solid #30363d !important;
+}
+
+.md-typeset table:not([class]) tbody tr {
+  transition: background 0.15s;
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(0, 150, 136, 0.07);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(0, 150, 136, 0.12);
+}
+
+/* === Details/summary: card style === */
+.md-typeset details {
+  border: 1px solid var(--md-typeset-table-color);
+  border-radius: 0.3rem;
+  margin-bottom: 0.8em;
+  overflow: hidden;
+}
+
+.md-typeset details summary {
+  background: var(--md-code-bg-color);
+  padding: 0.6em 1em;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.md-typeset details summary:hover {
+  background: rgba(0, 150, 136, 0.07);
+}
+
+.md-typeset details[open] > summary {
+  border-bottom: 1px solid var(--md-typeset-table-color);
+  margin-bottom: 0;
+}
+
+.md-typeset details > *:not(summary) {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/* === Horizontal rules: subtle === */
+.md-typeset hr {
+  border: none;
+  border-top: 1px solid var(--md-typeset-table-color);
+  margin: 2em 0;
+}
+
+/* === External link indicator === */
+.md-typeset a[href^="http"]:not([href*="zer0-kr.github.io"])::after {
+  content: " ↗";
+  font-size: 0.75em;
+  opacity: 0.5;
+}
+
+.md-nav a::after,
+.md-footer a::after,
+.md-header a::after,
+.md-search-result a::after,
+.md-source a::after {
+  content: none !important;
+}
+
+/* === Sidebar: section headers stand out from links === */
+.md-nav__item--section > label.md-nav__link {
+  color: #000 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  margin-top: 0.8em;
+}
+
+/* === Homepage: grid cards stand out === */
+.md-content .grid.cards {
+  margin: 1.5em 0;
+}
+
+.md-content .grid.cards > ul > li {
+  border: 2px solid var(--md-primary-fg-color) !important;
+  border-radius: 0.5rem;
+}
+
+.md-content .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.md-content .grid.cards > ul > li p:first-child {
+  font-size: 1.1rem;
+}
+
+/* === Homepage: table document links stand out === */
+.md-typeset table:not([class]) td:first-child a {
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset table:not([class]) td:first-child a:hover {
+  text-decoration: underline;
+}
+
+/* === Mermaid: respect inline node text colors (Material theme overrides them) === */
+.md-typeset .mermaid .nodeLabel,
+.md-typeset .mermaid .edgeLabel,
+.md-typeset .mermaid .label div,
+.md-typeset .mermaid foreignObject div {
+  color: inherit !important;
+}
+
+/* === Back to top: floating bottom-right button === */
+.md-top {
+  position: fixed !important;
+  bottom: 1.5rem !important;
+  right: 1.5rem !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  background: #161b22 !important;
+  color: #e6edf3 !important;
+  border-radius: 2rem !important;
+  padding: 0.6rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  font-size: 0 !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-top svg {
+  font-size: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* === Footer nav spacing === */
+.md-footer__link {
+  padding: 1em;
+}

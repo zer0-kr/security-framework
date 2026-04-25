@@ -1,0 +1,3178 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="글로벌 정보보호 프레임워크 한국어 레퍼런스">
+      
+      
+        <meta name="author" content="zer0-kr">
+      
+      
+        <link rel="canonical" href="https://zer0-kr.github.io/security-framework/NIST/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="CSF-2.0/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>개요 - Security Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="Security Framework">
+  <meta property="og:title" content="개요 - Security Framework">
+  <meta property="og:description" content="글로벌 정보보호 프레임워크 한국어 레퍼런스">
+  <meta property="og:url" content="https://zer0-kr.github.io/security-framework/NIST/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="개요 - Security Framework">
+  <meta name="twitter:description" content="글로벌 정보보호 프레임워크 한국어 레퍼런스">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nist-사이버보안-및-프라이버시-문서-체계" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="Security Framework" class="md-header__button md-logo" aria-label="Security Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5zm0 6c1.4 0 2.8 1.1 2.8 2.5V11c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2H9.2c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2V9.5C9.2 8.1 10.6 7 12 7m0 1.2c-.8 0-1.5.5-1.5 1.3V11h3V9.5c0-.8-.7-1.3-1.5-1.3"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Security Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              개요
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/zer0-kr/security-framework" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    zer0-kr/security-framework
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  NIST
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../OWASP/" class="md-tabs__link">
+          
+  
+  
+  OWASP
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Security Framework" class="md-nav__button md-logo" aria-label="Security Framework" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5zm0 6c1.4 0 2.8 1.1 2.8 2.5V11c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2H9.2c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2V9.5C9.2 8.1 10.6 7 12 7m0 1.2c-.8 0-1.5.5-1.5 1.3V11h3V9.5c0-.8-.7-1.3-1.5-1.3"/></svg>
+
+    </a>
+    Security Framework
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/zer0-kr/security-framework" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    zer0-kr/security-framework
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NIST
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    NIST
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    개요
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    개요
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#개요" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#학습-경로" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        학습 경로
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#시리즈-구조" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        시리즈 구조
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="시리즈 구조">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#시리즈-간-관계" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        시리즈 간 관계
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#상세-안내" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        상세 안내
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="상세 안내">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#한눈에-보기" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        한눈에 보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#프레임워크--무엇을-해야-하는가" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        프레임워크 — 무엇을 해야 하는가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#컨트롤--어떤-통제를-적용할-것인가" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        컨트롤 — 어떤 통제를 적용할 것인가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#가이드라인--주제별-상세-지침" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        가이드라인 — 주제별 상세 지침
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#실무-구현--어떻게-구현할-것인가" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실무 구현 — 어떻게 구현할 것인가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#연방-표준-및-기타" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        연방 표준 및 기타
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#부록" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        부록
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    프레임워크
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    프레임워크
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CSF-2.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CSF 2.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PF-1.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PF 1.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    컨트롤
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    컨트롤
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SP800-37/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SP 800-37
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SP800-53/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SP 800-53
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SP800-53/assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SP 800-53A
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SP800-53/low/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SP 800-53B LOW
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SP800-53/moderate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SP 800-53B MODERATE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SP800-53/high/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SP 800-53B HIGH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    가이드라인 목록
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    가이드라인 목록
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SP800/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SP 800 시리즈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SP1800/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SP 1800 시리즈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자동화 도구
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    자동화 도구
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    도구 및 데이터 소스
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OWASP
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    OWASP
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OWASP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    개요
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    위험 식별
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    위험 식별
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OWASP/Top10-2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Top 10 (2025)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OWASP/top10-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Top 10 전체 목록
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    보안 검증
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    보안 검증
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OWASP/ASVS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASVS v5.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OWASP/WSTG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WSTG v4.2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    프로젝트
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    프로젝트
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OWASP/projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    목록
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자동화 도구
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    자동화 도구
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OWASP/tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    도구 및 MCP 서버
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#개요" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#학습-경로" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        학습 경로
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#시리즈-구조" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        시리즈 구조
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="시리즈 구조">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#시리즈-간-관계" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        시리즈 간 관계
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#상세-안내" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        상세 안내
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="상세 안내">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#한눈에-보기" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        한눈에 보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#프레임워크--무엇을-해야-하는가" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        프레임워크 — 무엇을 해야 하는가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#컨트롤--어떤-통제를-적용할-것인가" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        컨트롤 — 어떤 통제를 적용할 것인가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#가이드라인--주제별-상세-지침" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        가이드라인 — 주제별 상세 지침
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#실무-구현--어떻게-구현할-것인가" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실무 구현 — 어떻게 구현할 것인가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#연방-표준-및-기타" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        연방 표준 및 기타
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#부록" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        부록
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="네비게이션" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    홈
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    NIST
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="nist-사이버보안-및-프라이버시-문서-체계">NIST 사이버보안 및 프라이버시 문서 체계<a class="headerlink" href="#nist-사이버보안-및-프라이버시-문서-체계" title="Permanent link">&para;</a></h1>
+<h2 id="개요">개요<a class="headerlink" href="#개요" title="Permanent link">&para;</a></h2>
+<p>NIST(National Institute of Standards and Technology, 미국 국립표준기술연구소)는 미국의 측정·표준·기술을 담당하는 연방기관입니다. 연방 정보보안 현대화법(FISMA)에 따라 <strong>사이버보안 및 프라이버시 분야의 표준과 가이드라인을 개발하는 역할</strong>도 수행합니다. NIST의 사이버보안/프라이버시 관련 출판물은 미국 연방기관을 대상으로 하지만, 그 체계성과 공신력 때문에 전 세계 보안 실무의 사실상 표준(de facto standard)으로 널리 참조됩니다.</p>
+<blockquote>
+<p>NIST가 발행하는 사이버보안/프라이버시 출판물은 미국 정부 저작물(U.S. Government Work)로서 <strong>퍼블릭 도메인</strong>이며, 자유롭게 활용할 수 있습니다.</p>
+</blockquote>
+<hr />
+<h2 id="학습-경로">학습 경로<a class="headerlink" href="#학습-경로" title="Permanent link">&para;</a></h2>
+<p>NIST 체계를 처음 접한다면 아래 순서로 읽는 것을 권장합니다.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 7v2h2v8h2V7zm2-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> <strong>전체 구조 파악</strong></p>
+<hr />
+<p><a href="#시리즈-구조">이 문서 (아래 계속)</a> — 시리즈 구조, 문서 간 관계도</p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v2h4v2h-2a2 2 0 0 0-2 2v4h6v-2h-4v-2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> <strong>목표 이해</strong></p>
+<hr />
+<p><a href="CSF-2.0/">CSF 2.0</a> — 6 Functions, 22 Categories, 106 Subcategories</p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 15v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5V9a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> <strong>프로세스 이해</strong></p>
+<hr />
+<p><a href="SP800-37/">SP 800-37</a> — RMF 7단계, 47 Tasks</p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v6h4v4h2V7h-2v4h-2V7zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> <strong>컨트롤 이해</strong></p>
+<hr />
+<p><a href="SP800-53/">SP 800-53</a> — 20 Families, 1,014 Active Controls</p>
+</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">핵심 경로</p>
+<p><strong>Step 1→4까지 읽으면</strong> NIST 체계의 핵심을 이해한 것입니다. 아래는 실무 적용 시 참고하세요.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>읽을 문서</th>
+<th>이 단계에서 알게 되는 것</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>5. 기준선 확인</strong></td>
+<td><a href="SP800-53/low/">LOW</a> · <a href="SP800-53/moderate/">MOD</a> · <a href="SP800-53/high/">HIGH</a></td>
+<td>"우리 시스템에 어떤 컨트롤이 필요한가" — 영향도별 체크리스트</td>
+</tr>
+<tr>
+<td><strong>6. 평가 방법</strong></td>
+<td><a href="SP800-53/assessment/">SP 800-53A</a></td>
+<td>"제대로 구현했는지 어떻게 검증하는가" — Examine/Interview/Test</td>
+</tr>
+</tbody>
+</table>
+<p>추가로 특정 주제의 상세 가이드라인이 필요하면:
+- <a href="SP800/">SP 800 전체 목록 (209건)</a> — 주제별 분류 + 한국어 요약으로 필요한 문서를 찾을 수 있습니다
+- <a href="SP1800/">SP 1800 전체 목록 (37건)</a> — 실제 구현 사례가 필요할 때
+- <a href="tools/">도구 및 데이터 소스</a> — API, MCP 서버, CLI 등 프로그래밍 방식으로 NIST 데이터를 활용하는 도구</p>
+<hr />
+<h2 id="시리즈-구조">시리즈 구조<a class="headerlink" href="#시리즈-구조" title="Permanent link">&para;</a></h2>
+<p>NIST 사이버보안/프라이버시 출판물은 <strong>CSRC</strong>(Computer Security Resource Center)를 통해 관리되며, 아래 시리즈로 분류됩니다.</p>
+<pre class="mermaid"><code>%%{init: {'securityLevel': 'loose', 'theme': 'base'}}%%
+flowchart LR
+    CSRC["&lt;span style='color:#fff'&gt;&lt;b&gt;NIST CSRC&lt;/b&gt;&lt;br/&gt;사이버보안/프라이버시&lt;br/&gt;출판물&lt;/span&gt;"]
+
+    CSRC --&gt; FIPS["&lt;span style='color:#fff'&gt;&lt;b&gt;FIPS&lt;/b&gt;&lt;br/&gt;연방 정보처리 표준&lt;br/&gt;&lt;i&gt;의무 준수&lt;/i&gt;&lt;/span&gt;"]
+    CSRC --&gt; SP800["&lt;span style='color:#fff'&gt;&lt;b&gt;SP 800&lt;/b&gt;&lt;br/&gt;컴퓨터/정보 보안&lt;br/&gt;&lt;i&gt;가이드라인 · 권고&lt;/i&gt;&lt;/span&gt;"]
+    CSRC --&gt; SP1800["&lt;span style='color:#fff'&gt;&lt;b&gt;SP 1800&lt;/b&gt;&lt;br/&gt;사이버보안 실무 가이드&lt;br/&gt;&lt;i&gt;구현 예시 · How-To&lt;/i&gt;&lt;/span&gt;"]
+    CSRC --&gt; IR["&lt;span style='color:#fff'&gt;&lt;b&gt;IR&lt;/b&gt;&lt;br/&gt;내부/기관 간 보고서&lt;br/&gt;&lt;i&gt;연구 · 분석&lt;/i&gt;&lt;/span&gt;"]
+    CSRC --&gt; CSWP["&lt;span style='color:#fff'&gt;&lt;b&gt;CSWP&lt;/b&gt;&lt;br/&gt;사이버보안 백서&lt;br/&gt;&lt;i&gt;신규 주제 · 의견&lt;/i&gt;&lt;/span&gt;"]
+    CSRC --&gt; FW["&lt;span style='color:#fff'&gt;&lt;b&gt;프레임워크&lt;/b&gt;&lt;/span&gt;"]
+
+    FW --&gt; CSF["&lt;span style='color:#fff'&gt;&lt;b&gt;CSF 2.0&lt;/b&gt;&lt;br/&gt;사이버보안 프레임워크&lt;/span&gt;"]
+    FW --&gt; PF["&lt;span style='color:#fff'&gt;&lt;b&gt;PF 1.0&lt;/b&gt;&lt;br/&gt;프라이버시 프레임워크&lt;/span&gt;"]
+
+    style CSRC fill:#263238,stroke:#263238
+    style FIPS fill:#37474f,stroke:#263238
+    style SP800 fill:#1a73e8,stroke:#1558b0
+    style SP1800 fill:#1a73e8,stroke:#1558b0
+    style IR fill:#546e7a,stroke:#37474f
+    style CSWP fill:#546e7a,stroke:#37474f
+    style FW fill:#00695c,stroke:#004d40
+    style CSF fill:#00897b,stroke:#00695c
+    style PF fill:#00897b,stroke:#00695c</code></pre>
+<h3 id="시리즈-간-관계">시리즈 간 관계<a class="headerlink" href="#시리즈-간-관계" title="Permanent link">&para;</a></h3>
+<p>아래 다이어그램은 NIST 사이버보안 체계의 핵심 문서 간 관계를 보여줍니다. 왼쪽의 <strong>RMF(SP 800-37)</strong>가 전체 프로세스를 운영하는 축이며, 오른쪽이 각 단계에서 참조하는 문서입니다.</p>
+<pre class="mermaid"><code>%%{init: {'securityLevel': 'loose', 'theme': 'base'}}%%
+flowchart TB
+    subgraph L1["프레임워크 — 무엇을 해야 하는가"]
+        CSF["&lt;span style='color:#fff'&gt;&lt;b&gt;CSF 2.0&lt;/b&gt;&lt;br/&gt;Cybersecurity Framework&lt;/span&gt;"]
+        PF["&lt;span style='color:#fff'&gt;&lt;b&gt;Privacy Framework&lt;/b&gt;&lt;/span&gt;"]
+    end
+
+    subgraph RMF["SP 800-37 · RMF — 보안 운영 프로세스"]
+        R1["&lt;span style='color:#fff'&gt;1. Prepare&lt;br/&gt;준비&lt;/span&gt;"]
+        R2["&lt;span style='color:#fff'&gt;2. Categorize&lt;br/&gt;분류&lt;/span&gt;"]
+        R3["&lt;span style='color:#fff'&gt;3. Select&lt;br/&gt;선택&lt;/span&gt;"]
+        R4["&lt;span style='color:#fff'&gt;4. Implement&lt;br/&gt;구현&lt;/span&gt;"]
+        R5["&lt;span style='color:#fff'&gt;5. Assess&lt;br/&gt;평가&lt;/span&gt;"]
+        R6["&lt;span style='color:#fff'&gt;6. Authorize&lt;br/&gt;인가&lt;/span&gt;"]
+        R7["&lt;span style='color:#fff'&gt;7. Monitor&lt;br/&gt;모니터링&lt;/span&gt;"]
+        R1 --&gt; R2 --&gt; R3 --&gt; R4 --&gt; R5 --&gt; R6 --&gt; R7
+        R7 -.-&gt; R1
+    end
+
+    subgraph L2["컨트롤 — 어떤 통제를 적용할 것인가"]
+        CTRL["&lt;span style='color:#fff'&gt;&lt;b&gt;SP 800-53&lt;/b&gt;&lt;br/&gt;컨트롤 카탈로그&lt;br/&gt;20 Families · 1,014 Active&lt;/span&gt;"]
+        ASSESS["&lt;span style='color:#333'&gt;&lt;b&gt;SP 800-53A&lt;/b&gt;&lt;br/&gt;평가 절차&lt;/span&gt;"]
+        BASE["&lt;span style='color:#333'&gt;&lt;b&gt;SP 800-53B&lt;/b&gt;&lt;br/&gt;기준선 (LOW · MOD · HIGH · PRIVACY)&lt;/span&gt;"]
+    end
+
+    subgraph L3["가이드라인 — 주제별 상세 지침"]
+        SP800["&lt;span style='color:#fff'&gt;&lt;b&gt;SP 800 시리즈&lt;/b&gt;&lt;br/&gt;주제별 상세 가이드&lt;br/&gt;CUI · ZTA · 침해대응 · 암호 등&lt;/span&gt;"]
+    end
+
+    subgraph L4["실무 구현 — 어떻게 구현할 것인가"]
+        SP1800["&lt;span style='color:#333'&gt;&lt;b&gt;SP 1800 시리즈&lt;/b&gt;&lt;br/&gt;실무 구현 가이드 (How-To)&lt;br/&gt;아키텍처 · 구성 절차 · 사례&lt;/span&gt;"]
+    end
+
+    FIPS["&lt;span style='color:#fff'&gt;&lt;b&gt;FIPS&lt;/b&gt;&lt;br/&gt;연방 표준&lt;br/&gt;&lt;i&gt;의무 준수&lt;/i&gt;&lt;/span&gt;"]
+
+    CSF -- "목표를 컨트롤로 매핑" --&gt; CTRL
+    PF -- "프라이버시 컨트롤 연계" --&gt; CTRL
+    CTRL --&gt; ASSESS
+    CTRL --&gt; BASE
+
+    R2 -. "FIPS 199로 영향도 분류" .-&gt; FIPS
+    R3 -. "기준선 선택" .-&gt; BASE
+    R4 -. "컨트롤 구현" .-&gt; CTRL
+    R4 -. "상세 지침 참조" .-&gt; SP800
+    R5 -. "평가 절차 적용" .-&gt; ASSESS
+    SP800 -- "구현 예시" --&gt; SP1800
+
+    style L1 fill:none,stroke:#1a73e8,stroke-width:2px
+    style RMF fill:none,stroke:#d32f2f,stroke-width:2px
+    style L2 fill:none,stroke:#e65100,stroke-width:2px
+    style L3 fill:none,stroke:#2e7d32,stroke-width:2px
+    style L4 fill:none,stroke:#558b2f,stroke-width:2px
+    style CSF fill:#1a73e8,stroke:#1558b0
+    style PF fill:#7b1fa2,stroke:#6a1b9a
+    style CTRL fill:#e65100,stroke:#bf360c
+    style ASSESS fill:#fff3e0,stroke:#e65100
+    style BASE fill:#fff3e0,stroke:#e65100
+    style SP800 fill:#2e7d32,stroke:#1b5e20
+    style SP1800 fill:#c8e6c9,stroke:#2e7d32
+    style FIPS fill:#37474f,stroke:#263238
+    style R1 fill:#d32f2f,stroke:#b71c1c
+    style R2 fill:#d32f2f,stroke:#b71c1c
+    style R3 fill:#d32f2f,stroke:#b71c1c
+    style R4 fill:#d32f2f,stroke:#b71c1c
+    style R5 fill:#d32f2f,stroke:#b71c1c
+    style R6 fill:#d32f2f,stroke:#b71c1c
+    style R7 fill:#d32f2f,stroke:#b71c1c</code></pre>
+<blockquote>
+<p><strong>RMF 7단계</strong>가 NIST 체계를 운영하는 중심 프로세스입니다. 각 단계에서 해당 문서를 참조합니다:<br />
+Categorize → FIPS 199 | Select → SP 800-53B | Implement → SP 800-53 + SP 800 시리즈 | Assess → SP 800-53A</p>
+</blockquote>
+<hr />
+<h2 id="상세-안내">상세 안내<a class="headerlink" href="#상세-안내" title="Permanent link">&para;</a></h2>
+<h3 id="한눈에-보기">한눈에 보기<a class="headerlink" href="#한눈에-보기" title="Permanent link">&para;</a></h3>
+<p>아래 표는 위 다이어그램의 위계 순서(프레임워크 → 컨트롤 → 가이드라인 → 실무 구현 → 표준 → 기타)로 정렬되어 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>시리즈</th>
+<th>성격</th>
+<th>문서 수</th>
+<th>핵심 키워드</th>
+<th>링크</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CSF 2.0</strong></td>
+<td>사이버보안 프레임워크</td>
+<td>—</td>
+<td>6 Functions, 22 Categories, 106 Subcategories</td>
+<td><a href="https://www.nist.gov/cyberframework">CSF</a></td>
+</tr>
+<tr>
+<td><strong>PF 1.0</strong></td>
+<td>프라이버시 프레임워크</td>
+<td>—</td>
+<td>5 Functions</td>
+<td><a href="https://www.nist.gov/privacy-framework">PF</a></td>
+</tr>
+<tr>
+<td><strong>SP 800-53</strong></td>
+<td>보안/프라이버시 컨트롤</td>
+<td>3건 (53/53A/53B)</td>
+<td>20 Families, 1,196 Controls, 4 Baselines</td>
+<td><a href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final">SP 800-53</a></td>
+</tr>
+<tr>
+<td><strong>SP 800-37</strong></td>
+<td>위험관리 프레임워크 (RMF)</td>
+<td>1건</td>
+<td>7단계, 47 Tasks — 보안 운영 프로세스의 중심축</td>
+<td><a href="https://csrc.nist.gov/pubs/sp/800/37/r2/final">SP 800-37</a></td>
+</tr>
+<tr>
+<td><strong>SP 800</strong></td>
+<td>가이드라인 (권고)</td>
+<td>209건</td>
+<td>CUI, ZTA, 침해대응, 암호 등</td>
+<td><a href="https://csrc.nist.gov/publications/sp800">SP 800</a></td>
+</tr>
+<tr>
+<td><strong>SP 1800</strong></td>
+<td>실무 구현 사례</td>
+<td>37건</td>
+<td>랜섬웨어, ZTA 구현, IoT, PQC</td>
+<td><a href="https://csrc.nist.gov/publications/sp1800">SP 1800</a></td>
+</tr>
+<tr>
+<td><strong>FIPS</strong></td>
+<td>연방 표준 (의무)</td>
+<td>13건</td>
+<td>AES, SHA, 암호모듈, 보안분류</td>
+<td><a href="https://csrc.nist.gov/publications/fips">FIPS</a></td>
+</tr>
+<tr>
+<td><strong>IR</strong></td>
+<td>연구/분석 보고서</td>
+<td>266건</td>
+<td>ERM, IoT, 신기술 분석</td>
+<td><a href="https://csrc.nist.gov/publications/ir">IR</a></td>
+</tr>
+<tr>
+<td><strong>CSWP</strong></td>
+<td>백서</td>
+<td>55건</td>
+<td>신규 주제, CSF/PF 원문</td>
+<td><a href="https://csrc.nist.gov/publications/white-papers">CSWP</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>아래 각 항목을 클릭하면 상세 내용을 확인할 수 있습니다.</p>
+</blockquote>
+<hr />
+<h3 id="프레임워크--무엇을-해야-하는가">프레임워크 — 무엇을 해야 하는가<a class="headerlink" href="#프레임워크--무엇을-해야-하는가" title="Permanent link">&para;</a></h3>
+<details>
+<summary><b>Cybersecurity Framework (CSF) 2.0</b></summary>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>발행일</strong></td>
+<td>2024년 2월 26일</td>
+</tr>
+<tr>
+<td><strong>이전 버전</strong></td>
+<td>CSF 1.1 (2018년)</td>
+</tr>
+<tr>
+<td><strong>URL</strong></td>
+<td>https://www.nist.gov/cyberframework</td>
+</tr>
+</tbody>
+</table>
+<p>CSF는 NIST의 다양한 문서를 <strong>하나의 체계</strong>로 엮는 최상위 프레임워크입니다. 전체 구조(106 Subcategories 포함)는 <a href="CSF-2.0/">CSF 2.0 상세 문서</a>를 참고하세요.</p>
+<p><strong>구조: 6 Functions → Categories → Subcategories</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>코드</th>
+<th>설명</th>
+<th>Categories</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Govern</strong></td>
+<td>GV</td>
+<td>조직의 사이버보안 리스크 관리 전략, 기대치, 정책을 수립하고 모니터링. <strong>CSF 2.0에서 신설</strong></td>
+<td>6개</td>
+</tr>
+<tr>
+<td><strong>Identify</strong></td>
+<td>ID</td>
+<td>현재의 사이버보안 리스크를 이해 — 자산, 취약점, 위협 식별</td>
+<td>3개</td>
+</tr>
+<tr>
+<td><strong>Protect</strong></td>
+<td>PR</td>
+<td>보안 위험을 관리하기 위한 보호조치 적용 — 접근제어, 교육, 데이터 보안</td>
+<td>5개</td>
+</tr>
+<tr>
+<td><strong>Detect</strong></td>
+<td>DE</td>
+<td>사이버보안 공격과 침해를 탐지 — 지속적 모니터링, 이상 분석</td>
+<td>2개</td>
+</tr>
+<tr>
+<td><strong>Respond</strong></td>
+<td>RS</td>
+<td>탐지된 사이버보안 사고에 대응 — 사고 관리, 분석, 완화, 보고</td>
+<td>4개</td>
+</tr>
+<tr>
+<td><strong>Recover</strong></td>
+<td>RC</td>
+<td>사이버보안 사고로 영향받은 자산과 운영을 복구</td>
+<td>2개</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>총 22 Categories, 106 Subcategories</strong></p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>CSF 2.0 계층 구조 예시:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>GV (Govern)
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── GV.OC (Organizational Context)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   ├── GV.OC-01: 조직의 미션이 이해되고 사이버보안 리스크 관리에 반영
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   ├── GV.OC-02: 내부/외부 이해관계자가 파악되고 그들의 요구사항이 이해됨
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   └── ...
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── GV.RM (Risk Management Strategy)
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   ├── GV.RM-01: 리스크 관리 목표가 수립되고 이해관계자의 동의를 받음
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│   └── ...
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>├── GV.RR (Roles, Responsibilities, and Authorities)
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>├── GV.PO (Policy)
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>├── GV.OV (Oversight)
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>└── GV.SC (Cybersecurity Supply Chain Risk Management)
+</code></pre></div>
+<p><strong>CSF의 활용 방식</strong></p>
+<ol>
+<li><strong>Current Profile</strong>: 현재 사이버보안 상태를 CSF 항목으로 매핑</li>
+<li><strong>Target Profile</strong>: 목표 사이버보안 상태를 정의</li>
+<li><strong>Gap Analysis</strong>: Current vs Target 비교 → 우선순위 도출</li>
+<li><strong>Implementation Tiers</strong> (Tier 1~4): 조직의 리스크 관리 접근 수준 (성숙도 모델이 아님)</li>
+</ol>
+</details>
+<details>
+<summary><b>Privacy Framework (PF) 1.0</b></summary>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>발행일</strong></td>
+<td>2020년 1월 16일</td>
+</tr>
+<tr>
+<td><strong>차기 버전</strong></td>
+<td>PF 1.1 (Initial Public Draft 공개, 최종판 발행 예정)</td>
+</tr>
+<tr>
+<td><strong>URL</strong></td>
+<td>https://www.nist.gov/privacy-framework</td>
+</tr>
+</tbody>
+</table>
+<p>CSF와 유사한 구조로, 프라이버시 리스크 관리를 위한 프레임워크입니다. 전체 구조(100 Subcategories 포함)는 <a href="PF-1.0/">PF 1.0 상세 문서</a>를 참고하세요.</p>
+<p><strong>구조: 5 Functions</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Identify-P</strong></td>
+<td>프라이버시 리스크 관리를 위한 조직적 이해</td>
+</tr>
+<tr>
+<td><strong>Govern-P</strong></td>
+<td>프라이버시 거버넌스 체계</td>
+</tr>
+<tr>
+<td><strong>Control-P</strong></td>
+<td>데이터 처리에 대한 관리 활동</td>
+</tr>
+<tr>
+<td><strong>Communicate-P</strong></td>
+<td>데이터 처리 관행에 대한 이해관계자 소통</td>
+</tr>
+<tr>
+<td><strong>Protect-P</strong></td>
+<td>데이터 보호를 위한 기술적/관리적 조치</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h3 id="컨트롤--어떤-통제를-적용할-것인가">컨트롤 — 어떤 통제를 적용할 것인가<a class="headerlink" href="#컨트롤--어떤-통제를-적용할-것인가" title="Permanent link">&para;</a></h3>
+<details>
+<summary><b>SP 800-53 Rev. 5: 보안 컨트롤 체계</b></summary>
+<p>SP 800-53은 NIST 체계에서 가장 핵심적인 문서입니다. CSF의 추상적 목표를 구체적인 <strong>보안 컨트롤</strong>로 변환합니다. 전체 컨트롤 목록(300 base controls)은 <a href="SP800-53/">SP 800-53 상세 문서</a>를 참고하세요. 53 시리즈는 3개 문서로 구성됩니다:</p>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>역할</th>
+<th>핵심 질문</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SP 800-53</strong></td>
+<td>컨트롤 카탈로그</td>
+<td>"어떤 통제 항목이 존재하는가?" — 20개 패밀리, 1,196 컨트롤 정의</td>
+</tr>
+<tr>
+<td><strong>SP 800-53A</strong></td>
+<td>평가 절차</td>
+<td>"컨트롤이 제대로 구현되었는지 어떻게 검증하는가?" — 각 컨트롤별 평가 방법과 판단 기준</td>
+</tr>
+<tr>
+<td><strong>SP 800-53B</strong></td>
+<td>기준선</td>
+<td>"우리 시스템에 어떤 컨트롤을 적용해야 하는가?" — 영향도별(LOW/MOD/HIGH/PRIVACY) 필수 컨트롤 세트</td>
+</tr>
+</tbody>
+</table>
+<p><strong>20개 컨트롤 패밀리</strong></p>
+<table>
+<thead>
+<tr>
+<th>코드</th>
+<th>패밀리</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AC</td>
+<td>Access Control</td>
+<td>접근 제어 정책 및 메커니즘</td>
+</tr>
+<tr>
+<td>AT</td>
+<td>Awareness and Training</td>
+<td>보안 교육 및 인식</td>
+</tr>
+<tr>
+<td>AU</td>
+<td>Audit and Accountability</td>
+<td>감사 로깅, 검토, 보존</td>
+</tr>
+<tr>
+<td>CA</td>
+<td>Assessment, Authorization, and Monitoring</td>
+<td>보안 평가 및 인가</td>
+</tr>
+<tr>
+<td>CM</td>
+<td>Configuration Management</td>
+<td>구성 기준선 및 변경 통제</td>
+</tr>
+<tr>
+<td>CP</td>
+<td>Contingency Planning</td>
+<td>사업 연속성 및 재해 복구</td>
+</tr>
+<tr>
+<td>IA</td>
+<td>Identification and Authentication</td>
+<td>신원 확인 메커니즘</td>
+</tr>
+<tr>
+<td>IR</td>
+<td>Incident Response</td>
+<td>사고 탐지, 처리, 보고</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Maintenance</td>
+<td>시스템 유지보수</td>
+</tr>
+<tr>
+<td>MP</td>
+<td>Media Protection</td>
+<td>매체 접근, 표시, 저장, 폐기</td>
+</tr>
+<tr>
+<td>PE</td>
+<td>Physical and Environmental Protection</td>
+<td>물리적 접근 및 환경 통제</td>
+</tr>
+<tr>
+<td>PL</td>
+<td>Planning</td>
+<td>보안 계획 및 시스템 보안 계획서</td>
+</tr>
+<tr>
+<td>PM</td>
+<td>Program Management</td>
+<td>조직 차원의 정보보안 프로그램</td>
+</tr>
+<tr>
+<td>PS</td>
+<td>Personnel Security</td>
+<td>인력 심사 및 접근 계약</td>
+</tr>
+<tr>
+<td>PT</td>
+<td>PII Processing and Transparency</td>
+<td>개인정보 처리 및 투명성</td>
+</tr>
+<tr>
+<td>RA</td>
+<td>Risk Assessment</td>
+<td>위험 식별, 분석, 대응</td>
+</tr>
+<tr>
+<td>SA</td>
+<td>System and Services Acquisition</td>
+<td>안전한 개발 및 공급망</td>
+</tr>
+<tr>
+<td>SC</td>
+<td>System and Communications Protection</td>
+<td>암호화 및 통신 보호</td>
+</tr>
+<tr>
+<td>SI</td>
+<td>System and Information Integrity</td>
+<td>결함 교정, 모니터링, 악성코드 보호</td>
+</tr>
+<tr>
+<td>SR</td>
+<td>Supply Chain Risk Management</td>
+<td>공급망 통제 및 출처</td>
+</tr>
+</tbody>
+</table>
+<p><strong>기준선 (Baselines)</strong></p>
+<p>SP 800-53B에서 정의하는 기준선은 시스템의 영향도(Impact Level)에 따라 적용할 컨트롤 세트를 지정합니다.</p>
+<table>
+<thead>
+<tr>
+<th>기준선</th>
+<th>영향도</th>
+<th>컨트롤 수</th>
+<th>적용 상황</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LOW</td>
+<td>제한적 피해</td>
+<td>149개</td>
+<td>기밀성/무결성/가용성 손실 시 피해가 제한적</td>
+</tr>
+<tr>
+<td>MODERATE</td>
+<td>심각한 피해</td>
+<td>287개</td>
+<td>피해가 심각한 수준</td>
+</tr>
+<tr>
+<td>HIGH</td>
+<td>치명적 피해</td>
+<td>370개</td>
+<td>피해가 치명적/재앙적</td>
+</tr>
+<tr>
+<td>PRIVACY</td>
+<td>개인정보</td>
+<td>~110개</td>
+<td>PII를 처리하는 시스템</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>컨트롤 수는 NIST OSCAL 공식 프로파일 기준입니다. PRIVACY 기준선은 별도 집계로 근사값입니다.</p>
+</blockquote>
+</details>
+<hr />
+<h3 id="가이드라인--주제별-상세-지침">가이드라인 — 주제별 상세 지침<a class="headerlink" href="#가이드라인--주제별-상세-지침" title="Permanent link">&para;</a></h3>
+<details>
+<summary><b>SP 800 시리즈 — 가이드라인 및 권고사항 (209건)</b></summary>
+<p>NIST 사이버보안의 핵심 시리즈입니다. 번호는 800-12부터 800-236까지 있으며, 전체 209건의 주제별 분류 목록은 <a href="SP800/">SP 800 전체 문서 목록</a>을 참고하세요. 아래는 주요 문서만 발췌한 것입니다:</p>
+<blockquote>
+<p>SP 800-53 시리즈(53/53A/53B)는 별도 섹션에서 상세히 다루고 있으므로 여기서는 생략합니다.</p>
+</blockquote>
+<p><strong>위험 관리 (Risk Management)</strong></p>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>제목</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SP 800-30</td>
+<td>Guide for Conducting Risk Assessments</td>
+<td>위험 평가 수행 가이드</td>
+</tr>
+<tr>
+<td>SP 800-37</td>
+<td>Risk Management Framework (RMF)</td>
+<td><strong>위험관리 프레임워크</strong> — 준비→분류→선택→구현→평가→인가→모니터링 7단계</td>
+</tr>
+<tr>
+<td>SP 800-39</td>
+<td>Managing Information Security Risk</td>
+<td>조직 수준의 정보보안 위험 관리</td>
+</tr>
+</tbody>
+</table>
+<p><strong>CUI 보호 (Controlled Unclassified Information)</strong></p>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>제목</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SP 800-171 Rev. 3</td>
+<td>Protecting CUI in Nonfederal Systems</td>
+<td>비연방 시스템의 CUI 보호 요구사항. <strong>CMMC 2.0의 기반</strong></td>
+</tr>
+<tr>
+<td>SP 800-172</td>
+<td>Enhanced Security Requirements for CUI</td>
+<td>CUI 보호 강화 요구사항</td>
+</tr>
+</tbody>
+</table>
+<p><strong>인증 및 접근 제어 (Identity &amp; Access)</strong></p>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>제목</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SP 800-63-4</td>
+<td>Digital Identity Guidelines</td>
+<td>디지털 인증 가이드라인 (IAL/AAL/FAL)</td>
+</tr>
+<tr>
+<td>SP 800-207</td>
+<td>Zero Trust Architecture</td>
+<td><strong>제로 트러스트 아키텍처</strong> 참조 모델</td>
+</tr>
+</tbody>
+</table>
+<p><strong>침해사고 대응 (Incident Response)</strong></p>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>제목</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SP 800-61 Rev. 3</td>
+<td>Incident Response Recommendations</td>
+<td>침해사고 대응 권고사항 (CSF 2.0 연계)</td>
+</tr>
+<tr>
+<td>SP 800-86</td>
+<td>Guide to Integrating Forensic Techniques</td>
+<td>포렌식 기법 가이드</td>
+</tr>
+<tr>
+<td>SP 800-83</td>
+<td>Guide to Malware Incident Prevention</td>
+<td>악성코드 사고 예방/대응</td>
+</tr>
+</tbody>
+</table>
+<p><strong>보안 테스트 및 평가 (Testing &amp; Assessment)</strong></p>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>제목</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SP 800-115</td>
+<td>Technical Guide to Information Security Testing</td>
+<td>보안 테스트 기술 가이드</td>
+</tr>
+<tr>
+<td>SP 800-137</td>
+<td>Information Security Continuous Monitoring</td>
+<td>지속적 모니터링</td>
+</tr>
+</tbody>
+</table>
+<p><strong>클라우드 및 신기술 (Cloud &amp; Emerging Tech)</strong></p>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>제목</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SP 800-210</td>
+<td>General Access Control Guidance for Cloud Systems</td>
+<td>클라우드 접근 제어</td>
+</tr>
+<tr>
+<td>SP 800-213</td>
+<td>IoT Device Cybersecurity Guidance</td>
+<td>IoT 디바이스 보안</td>
+</tr>
+<tr>
+<td>SP 800-218</td>
+<td>Secure Software Development Framework (SSDF)</td>
+<td>안전한 소프트웨어 개발 프레임워크</td>
+</tr>
+<tr>
+<td>SP 800-228</td>
+<td>Guidance for Securing AI Systems</td>
+<td>AI 시스템 보안 가이드</td>
+</tr>
+</tbody>
+</table>
+<p><strong>암호 (Cryptography)</strong></p>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>제목</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SP 800-57</td>
+<td>Recommendation for Key Management</td>
+<td>키 관리 권고사항 (Part 1~3)</td>
+</tr>
+<tr>
+<td>SP 800-175B</td>
+<td>Guideline for Using Cryptographic Standards</td>
+<td>암호 표준 사용 가이드</td>
+</tr>
+<tr>
+<td>SP 800-227</td>
+<td>Recommendations for Key-Encapsulation Mechanisms</td>
+<td>양자내성 암호 키 캡슐화 권고</td>
+</tr>
+</tbody>
+</table>
+<p><strong>OT/산업제어 (Operational Technology)</strong></p>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>제목</th>
+<th>핵심 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SP 800-82 Rev. 3</td>
+<td>Guide to Operational Technology (OT) Security</td>
+<td>OT/ICS/SCADA 보안 가이드</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>위 목록은 SP 800 시리즈의 <strong>주요 문서</strong>만 발췌한 것입니다. 전체 목록은 <a href="https://csrc.nist.gov/publications/sp800">NIST SP 800 시리즈 페이지</a>에서 확인할 수 있습니다.</p>
+</blockquote>
+</details>
+<hr />
+<h3 id="실무-구현--어떻게-구현할-것인가">실무 구현 — 어떻게 구현할 것인가<a class="headerlink" href="#실무-구현--어떻게-구현할-것인가" title="Permanent link">&para;</a></h3>
+<details>
+<summary><b>SP 1800 시리즈 — 실무 구현 가이드 (37건)</b></summary>
+<p>NCCoE(National Cybersecurity Center of Excellence)에서 발행합니다. SP 800이 주제별 요구사항과 절차를 설명한다면, SP 1800은 <strong>실제 제품과 아키텍처를 사용해 어떻게 구현하는지</strong> 보여줍니다. 전체 37건의 주제별 분류 목록은 <a href="SP1800/">SP 1800 전체 문서 목록</a>을 참고하세요.</p>
+<p>각 문서는 보통 3개 파트로 구성됩니다:
+- <strong>Volume A</strong>: Executive Summary (경영진 요약)
+- <strong>Volume B</strong>: Approach, Architecture, and Security Characteristics (접근 방법)
+- <strong>Volume C</strong>: How-To Guides (단계별 구현 절차)</p>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>주제</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SP 1800-25</td>
+<td>Data Integrity: Identifying and Protecting Assets Against Ransomware</td>
+</tr>
+<tr>
+<td>SP 1800-26</td>
+<td>Data Integrity: Detecting and Responding to Ransomware</td>
+</tr>
+<tr>
+<td>SP 1800-35</td>
+<td>Implementing a Zero Trust Architecture</td>
+</tr>
+<tr>
+<td>SP 1800-36</td>
+<td>Trusted IoT Onboarding</td>
+</tr>
+<tr>
+<td>SP 1800-38</td>
+<td>Migration to Post-Quantum Cryptography</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h3 id="연방-표준-및-기타">연방 표준 및 기타<a class="headerlink" href="#연방-표준-및-기타" title="Permanent link">&para;</a></h3>
+<details>
+<summary><b>FIPS — 연방 정보처리 표준 (13건)</b></summary>
+<p>연방 표준으로, 미국 연방기관은 <strong>의무 준수</strong> 대상입니다. FISMA에 의해 NIST에 표준 개발 권한이 부여되었습니다.</p>
+<blockquote>
+<p><strong>FIPS와 SP의 차이:</strong> FIPS는 "무엇을 해야 하는가"(의무), SP는 "어떻게 해야 하는가"(권고). 예: FIPS 200이 최소 보안 요구사항을 정의하면, SP 800-53이 그 요구사항을 충족하기 위한 구체적 보안 컨트롤을 제공합니다.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>번호</th>
+<th>제목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIPS 140-2</td>
+<td>Security Requirements for Cryptographic Modules</td>
+<td>암호 모듈 보안 요구사항 (기존 표준, 140-3으로 전환 중이나 기존 인증 유효)</td>
+</tr>
+<tr>
+<td>FIPS 140-3</td>
+<td>Security Requirements for Cryptographic Modules</td>
+<td>암호 모듈 보안 요구사항 (현행 표준, 신규 인증은 140-3 기준)</td>
+</tr>
+<tr>
+<td>FIPS 180-4</td>
+<td>Secure Hash Standard (SHS)</td>
+<td>SHA-1, SHA-224, SHA-256, SHA-384, SHA-512 해시 함수 표준</td>
+</tr>
+<tr>
+<td>FIPS 186-5</td>
+<td>Digital Signature Standard (DSS)</td>
+<td>디지털 서명 알고리즘 표준 (RSA, ECDSA, EdDSA)</td>
+</tr>
+<tr>
+<td>FIPS 197</td>
+<td>Advanced Encryption Standard (AES)</td>
+<td>AES 암호화 알고리즘 표준</td>
+</tr>
+<tr>
+<td>FIPS 198-1</td>
+<td>The Keyed-Hash Message Authentication Code (HMAC)</td>
+<td>HMAC 표준</td>
+</tr>
+<tr>
+<td>FIPS 199</td>
+<td>Standards for Security Categorization</td>
+<td>정보/정보시스템의 보안 분류 기준 (LOW/MODERATE/HIGH)</td>
+</tr>
+<tr>
+<td>FIPS 200</td>
+<td>Minimum Security Requirements</td>
+<td>연방 정보시스템 최소 보안 요구사항</td>
+</tr>
+<tr>
+<td>FIPS 201-3</td>
+<td>Personal Identity Verification (PIV)</td>
+<td>연방 직원/계약자 신원확인 표준</td>
+</tr>
+<tr>
+<td>FIPS 202</td>
+<td>SHA-3 Standard</td>
+<td>SHA-3 해시 함수 표준</td>
+</tr>
+<tr>
+<td>FIPS 203</td>
+<td>ML-KEM (Module-Lattice-Based Key-Encapsulation)</td>
+<td>양자내성 키 캡슐화 표준</td>
+</tr>
+<tr>
+<td>FIPS 204</td>
+<td>ML-DSA (Module-Lattice-Based Digital Signature)</td>
+<td>양자내성 디지털 서명 표준</td>
+</tr>
+<tr>
+<td>FIPS 205</td>
+<td>SLH-DSA (Stateless Hash-Based Digital Signature)</td>
+<td>양자내성 해시 기반 서명 표준</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><b>NIST IR — 연구/분석 보고서 (266건)</b></summary>
+<p>특정 주제에 대한 연구 결과나 심층 분석을 담습니다. 일부는 이후 SP 시리즈로 발전하기도 합니다.</p>
+<table>
+<thead>
+<tr>
+<th>문서</th>
+<th>제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IR 8286</td>
+<td>Integrating Cybersecurity and Enterprise Risk Management (ERM)</td>
+</tr>
+<tr>
+<td>IR 8259</td>
+<td>Foundational Cybersecurity Activities for IoT Device Manufacturers</td>
+</tr>
+<tr>
+<td>IR 8401</td>
+<td>Satellite Ground Segment: Applying the CSF to Satellite C2</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><b>CSWP — 사이버보안 백서 (55건)</b></summary>
+<p>신규 주제에 대한 의견 제시나 프레임워크 문서를 포함합니다.</p>
+<blockquote>
+<p>CSF 2.0과 Privacy Framework도 CSWP로 분류됩니다.<br />
+예: CSWP 29 = CSF 2.0, CSWP 10 = Privacy Framework 1.0</p>
+</blockquote>
+</details>
+<hr />
+<h2 id="부록">부록<a class="headerlink" href="#부록" title="Permanent link">&para;</a></h2>
+<details>
+<summary><b>문서 상태(Publication Status)</b></summary>
+<table>
+<thead>
+<tr>
+<th>상태</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Final</strong></td>
+<td>최종 확정본</td>
+</tr>
+<tr>
+<td><strong>Public Draft</strong> / <strong>IPD</strong></td>
+<td>공개 초안 — 공개 의견 수렴 중</td>
+</tr>
+<tr>
+<td><strong>Superseded</strong></td>
+<td>대체됨 — 새로운 버전이 발행되어 이전 버전을 대체</td>
+</tr>
+<tr>
+<td><strong>Withdrawn</strong></td>
+<td>폐지 — 더 이상 유효하지 않음</td>
+</tr>
+</tbody>
+</table>
+<p>NIST 문서는 지속적으로 개정됩니다. 버전 표기는 두 가지입니다:
+- <strong>Rev. N</strong> (Revision) — 주요 개정. 예: SP 800-53 Rev. 5
+- <strong>Update N</strong> — 소규모 업데이트. 예: SP 800-53 Rev. 5, Update 1</p>
+</details>
+<details>
+<summary><b>머신 리더블 데이터(Machine-Readable Data)</b></summary>
+<p>NIST는 문서 내용을 프로그래밍 방식으로 접근할 수 있도록 여러 형식을 제공합니다.</p>
+<table>
+<thead>
+<tr>
+<th>도구/형식</th>
+<th>설명</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OSCAL</strong></td>
+<td>Open Security Controls Assessment Language (v1.0.6). SP 800-53 컨트롤을 JSON/XML/YAML로 제공</td>
+<td>https://pages.nist.gov/OSCAL/</td>
+</tr>
+<tr>
+<td><strong>CPRT</strong></td>
+<td>Cybersecurity and Privacy Reference Tool. 컨트롤 간 관계를 JSON/XLSX로 제공</td>
+<td>https://csrc.nist.gov/projects/cprt</td>
+</tr>
+<tr>
+<td><strong>NVD API</strong></td>
+<td>National Vulnerability Database API. CVE/CPE 데이터를 REST API로 제공</td>
+<td>https://nvd.nist.gov/developers</td>
+</tr>
+<tr>
+<td><strong>Publications XLSX</strong></td>
+<td>전체 출판물 메타데이터를 엑셀로 다운로드</td>
+<td><a href="https://csrc.nist.gov/files/pubs/shared/docs/NIST-Cybersecurity-Publications.xlsx">다운로드</a></td>
+</tr>
+<tr>
+<td><strong>RSS/JSON Feed</strong></td>
+<td>공개 초안 알림 피드</td>
+<td>https://csrc.nist.gov/CSRC/media/feeds/pubs/drafts-open-for-comment.json</td>
+</tr>
+<tr>
+<td><strong>GitHub</strong></td>
+<td>OSCAL 콘텐츠, 기술 출판물 메타데이터 등</td>
+<td>https://github.com/usnistgov</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><b>참고 링크</b></summary>
+<table>
+<thead>
+<tr>
+<th>리소스</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NIST CSRC (메인)</td>
+<td>https://csrc.nist.gov</td>
+</tr>
+<tr>
+<td>SP 800 시리즈</td>
+<td>https://csrc.nist.gov/publications/sp800</td>
+</tr>
+<tr>
+<td>SP 1800 시리즈</td>
+<td>https://csrc.nist.gov/publications/sp1800</td>
+</tr>
+<tr>
+<td>NIST IR 시리즈</td>
+<td>https://csrc.nist.gov/publications/ir</td>
+</tr>
+<tr>
+<td>FIPS</td>
+<td>https://csrc.nist.gov/publications/fips</td>
+</tr>
+<tr>
+<td>CSF 2.0</td>
+<td>https://www.nist.gov/cyberframework</td>
+</tr>
+<tr>
+<td>Privacy Framework</td>
+<td>https://www.nist.gov/privacy-framework</td>
+</tr>
+<tr>
+<td>NVD</td>
+<td>https://nvd.nist.gov</td>
+</tr>
+<tr>
+<td>OSCAL</td>
+<td>https://pages.nist.gov/OSCAL</td>
+</tr>
+<tr>
+<td>CPRT</td>
+<td>https://csrc.nist.gov/projects/cprt</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="이전: 홈">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                홈
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="CSF-2.0/" class="md-footer__link md-footer__link--next" aria-label="다음: CSF 2.0">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                CSF 2.0
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> | 이 프로젝트는 NIST/OWASP 공식 자료가 아닌 비공식 학습 자료입니다
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/zer0-kr/security-framework" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "navigation.tracking", "search.highlight", "search.suggest", "search.share", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
