@@ -126,6 +126,14 @@
   text-decoration: underline;
 }
 
+/* === Mermaid: respect inline node text colors (Material theme overrides them) === */
+.md-typeset .mermaid .nodeLabel,
+.md-typeset .mermaid .edgeLabel,
+.md-typeset .mermaid .label div,
+.md-typeset .mermaid foreignObject div {
+  color: inherit !important;
+}
+
 /* === Footer nav spacing === */
 .md-footer__link {
   padding: 1em;
