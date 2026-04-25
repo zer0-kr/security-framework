@@ -4,14 +4,14 @@
   line-height: 1.8;
 }
 
-/* === Section headings: left accent border === */
+/* === Section headings: accent border === */
 .md-typeset h2 {
   border-bottom: 2px solid var(--md-primary-fg-color);
   padding-bottom: 0.3em;
   margin-top: 2em;
 }
 
-/* === Disclaimer blockquote: admonition-style === */
+/* === Blockquote: accent left border === */
 .md-typeset blockquote {
   border-left: 4px solid var(--md-accent-fg-color);
   background: var(--md-admonition-bg-color, rgba(0, 0, 0, 0.025));
@@ -24,25 +24,7 @@
   background: rgba(255, 255, 255, 0.04);
 }
 
-/* === Guide hero links: prominent call-to-action === */
-.md-typeset strong > a {
-  display: inline-block;
-  background: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color) !important;
-  padding: 0.5em 1.2em;
-  border-radius: 0.3rem;
-  text-decoration: none;
-  font-weight: 600;
-  margin: 0.5em 0;
-  transition: opacity 0.2s, transform 0.1s;
-}
-
-.md-typeset strong > a:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
-/* === Tables: interactive and polished === */
+/* === Tables: polished and interactive === */
 .md-typeset table:not([class]) {
   border-collapse: separate;
   border-spacing: 0;
@@ -70,27 +52,14 @@
 }
 
 .md-typeset table:not([class]) tbody tr:hover {
-  background: var(--md-accent-fg-color--transparent, rgba(0, 150, 136, 0.07));
+  background: rgba(0, 150, 136, 0.07);
 }
 
-/* === Table "상세" links: pill badges === */
-.md-typeset table:not([class]) td:last-child a {
-  display: inline-block;
-  background: var(--md-accent-fg-color);
-  color: #fff !important;
-  padding: 0.15em 0.7em;
-  border-radius: 1em;
-  font-size: 0.82em;
-  font-weight: 500;
-  text-decoration: none;
-  transition: opacity 0.15s;
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(0, 150, 136, 0.12);
 }
 
-.md-typeset table:not([class]) td:last-child a:hover {
-  opacity: 0.85;
-}
-
-/* === Details/summary: polished collapsible sections === */
+/* === Details/summary: card style === */
 .md-typeset details {
   border: 1px solid var(--md-typeset-table-color);
   border-radius: 0.3rem;
@@ -107,7 +76,7 @@
 }
 
 .md-typeset details summary:hover {
-  background: var(--md-accent-fg-color--transparent, rgba(0, 150, 136, 0.07));
+  background: rgba(0, 150, 136, 0.07);
 }
 
 .md-typeset details[open] > summary {
@@ -120,31 +89,44 @@
   padding-right: 0.5em;
 }
 
-/* === Horizontal rules: subtle separators === */
+/* === Horizontal rules: subtle === */
 .md-typeset hr {
   border: none;
   border-top: 1px solid var(--md-typeset-table-color);
   margin: 2em 0;
 }
 
-/* === External links: subtle indicator === */
+/* === External link indicator === */
 .md-typeset a[href^="http"]:not([href*="zer0-kr.github.io"])::after {
   content: " ↗";
   font-size: 0.75em;
   opacity: 0.5;
 }
 
-/* Keep nav and footer links clean */
 .md-nav a::after,
 .md-footer a::after,
 .md-header a::after,
 .md-search-result a::after,
-.md-source a::after,
-.md-typeset table a::after {
+.md-source a::after {
   content: none !important;
 }
 
-/* === Footer nav: clearer previous/next === */
+/* === Homepage: full-width grid cards === */
+.md-content .grid.cards {
+  margin: 1.5em 0;
+}
+
+/* === Homepage: table document links stand out === */
+.md-typeset table:not([class]) td:first-child a {
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset table:not([class]) td:first-child a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer nav spacing === */
 .md-footer__link {
   padding: 1em;
 }
