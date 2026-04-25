@@ -169,7 +169,7 @@ WSTG-<카테고리>-<번호>
 </details>
 
 <details>
-<summary><b>INPV — 입력 검증 (31개) — 가장 큰 카테고리</b></summary>
+<summary><b>INPV — 입력 검증 (31개)</b></summary>
 
 | ID | 테스트 |
 |----|--------|
