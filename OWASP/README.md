@@ -42,7 +42,7 @@ Step 1              Step 2              Step 3              Step 4
 
 추가로:
 - [OWASP 주요 프로젝트 목록](./projects.md) — Flagship/Production/Lab/Incubator 프로젝트
-- [Top 10 프로젝트 전체 목록](./top10-variants.md) — 26개 도메인별 Top 10 모음
+- [Top 10 프로젝트 전체 목록](./top10-catalog.md) — 26개 도메인별 Top 10 모음
 
 ---
 
