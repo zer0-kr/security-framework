@@ -1,0 +1,21 @@
+.md-typeset {
+  word-break: keep-all;
+  line-height: 1.8;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 0.8em 1em;
+}
+
+.md-typeset details {
+  margin-bottom: 1em;
+}
+
+.md-typeset details summary {
+  padding: 0.6em 1em;
+}
+
+.md-typeset details[open] > summary {
+  margin-bottom: 0.5em;
+}

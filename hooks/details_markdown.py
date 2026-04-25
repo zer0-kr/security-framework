@@ -1,12 +1,14 @@
-"""MkDocs hook: enable markdown rendering inside <details> blocks.
+"""MkDocs hook: inject markdown="1" into <details> tags at build time.
 
-Raw HTML <details> tags require markdown="1" attribute for the md_in_html
-extension to process their content as markdown. This hook injects the
-attribute at build time so source files stay unchanged.
+The md_in_html extension only processes markdown inside HTML blocks that
+carry markdown="1". Source files use raw <details> without it, and the
+constraint is to never modify source content. This hook bridges the gap.
 """
 
 import re
 
+_DETAILS_RE = re.compile(r'<details(?![^>]*markdown\s*=)([^>]*)>', re.IGNORECASE)
+
 
 def on_page_markdown(markdown, **kwargs):
-    return re.sub(r'<details>', '<details markdown="1">', markdown)
+    return _DETAILS_RE.sub(r'<details\1 markdown="1">', markdown)
