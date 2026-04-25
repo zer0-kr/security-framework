@@ -44,29 +44,29 @@ Step 1                Step 2                Step 3                Step 4
 NIST 사이버보안/프라이버시 출판물은 **CSRC**(Computer Security Resource Center)를 통해 관리되며, 아래 시리즈로 분류됩니다.
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '14px'}}}%%
+%%{init: {'securityLevel': 'loose', 'theme': 'base'}}%%
 flowchart LR
-    CSRC["<b>NIST CSRC</b><br/>사이버보안/프라이버시<br/>출판물"]
+    CSRC["<span style='color:#fff'><b>NIST CSRC</b><br/>사이버보안/프라이버시<br/>출판물</span>"]
 
-    CSRC --> FIPS["<b>FIPS</b><br/>연방 정보처리 표준<br/><i>의무 준수</i>"]
-    CSRC --> SP800["<b>SP 800</b><br/>컴퓨터/정보 보안<br/><i>가이드라인 · 권고</i>"]
-    CSRC --> SP1800["<b>SP 1800</b><br/>사이버보안 실무 가이드<br/><i>구현 예시 · How-To</i>"]
-    CSRC --> IR["<b>IR</b><br/>내부/기관 간 보고서<br/><i>연구 · 분석</i>"]
-    CSRC --> CSWP["<b>CSWP</b><br/>사이버보안 백서<br/><i>신규 주제 · 의견</i>"]
-    CSRC --> FW["<b>프레임워크</b>"]
+    CSRC --> FIPS["<span style='color:#fff'><b>FIPS</b><br/>연방 정보처리 표준<br/><i>의무 준수</i></span>"]
+    CSRC --> SP800["<span style='color:#fff'><b>SP 800</b><br/>컴퓨터/정보 보안<br/><i>가이드라인 · 권고</i></span>"]
+    CSRC --> SP1800["<span style='color:#fff'><b>SP 1800</b><br/>사이버보안 실무 가이드<br/><i>구현 예시 · How-To</i></span>"]
+    CSRC --> IR["<span style='color:#fff'><b>IR</b><br/>내부/기관 간 보고서<br/><i>연구 · 분석</i></span>"]
+    CSRC --> CSWP["<span style='color:#fff'><b>CSWP</b><br/>사이버보안 백서<br/><i>신규 주제 · 의견</i></span>"]
+    CSRC --> FW["<span style='color:#fff'><b>프레임워크</b></span>"]
 
-    FW --> CSF["<b>CSF 2.0</b><br/>사이버보안 프레임워크"]
-    FW --> PF["<b>PF 1.0</b><br/>프라이버시 프레임워크"]
+    FW --> CSF["<span style='color:#fff'><b>CSF 2.0</b><br/>사이버보안 프레임워크</span>"]
+    FW --> PF["<span style='color:#fff'><b>PF 1.0</b><br/>프라이버시 프레임워크</span>"]
 
-    style CSRC fill:#263238,stroke:#263238,color:#fff
-    style FIPS fill:#37474f,stroke:#263238,color:#fff
-    style SP800 fill:#1a73e8,stroke:#1558b0,color:#fff
-    style SP1800 fill:#1a73e8,stroke:#1558b0,color:#fff
-    style IR fill:#546e7a,stroke:#37474f,color:#fff
-    style CSWP fill:#546e7a,stroke:#37474f,color:#fff
-    style FW fill:#00695c,stroke:#004d40,color:#fff
-    style CSF fill:#00897b,stroke:#00695c,color:#fff
-    style PF fill:#00897b,stroke:#00695c,color:#fff
+    style CSRC fill:#263238,stroke:#263238
+    style FIPS fill:#37474f,stroke:#263238
+    style SP800 fill:#1a73e8,stroke:#1558b0
+    style SP1800 fill:#1a73e8,stroke:#1558b0
+    style IR fill:#546e7a,stroke:#37474f
+    style CSWP fill:#546e7a,stroke:#37474f
+    style FW fill:#00695c,stroke:#004d40
+    style CSF fill:#00897b,stroke:#00695c
+    style PF fill:#00897b,stroke:#00695c
 ```
 
 ### 시리즈 간 관계
@@ -74,40 +74,40 @@ flowchart LR
 아래 다이어그램은 NIST 사이버보안 체계의 핵심 문서 간 관계를 보여줍니다. 왼쪽의 **RMF(SP 800-37)**가 전체 프로세스를 운영하는 축이며, 오른쪽이 각 단계에서 참조하는 문서입니다.
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '14px'}}}%%
+%%{init: {'securityLevel': 'loose', 'theme': 'base'}}%%
 flowchart TB
     subgraph L1["프레임워크 — 무엇을 해야 하는가"]
-        CSF["<b>CSF 2.0</b><br/>Cybersecurity Framework"]
-        PF["<b>Privacy Framework</b>"]
+        CSF["<span style='color:#fff'><b>CSF 2.0</b><br/>Cybersecurity Framework</span>"]
+        PF["<span style='color:#fff'><b>Privacy Framework</b></span>"]
     end
 
     subgraph RMF["SP 800-37 · RMF — 보안 운영 프로세스"]
-        R1["1. Prepare<br/>준비"]
-        R2["2. Categorize<br/>분류"]
-        R3["3. Select<br/>선택"]
-        R4["4. Implement<br/>구현"]
-        R5["5. Assess<br/>평가"]
-        R6["6. Authorize<br/>인가"]
-        R7["7. Monitor<br/>모니터링"]
+        R1["<span style='color:#fff'>1. Prepare<br/>준비</span>"]
+        R2["<span style='color:#fff'>2. Categorize<br/>분류</span>"]
+        R3["<span style='color:#fff'>3. Select<br/>선택</span>"]
+        R4["<span style='color:#fff'>4. Implement<br/>구현</span>"]
+        R5["<span style='color:#fff'>5. Assess<br/>평가</span>"]
+        R6["<span style='color:#fff'>6. Authorize<br/>인가</span>"]
+        R7["<span style='color:#fff'>7. Monitor<br/>모니터링</span>"]
         R1 --> R2 --> R3 --> R4 --> R5 --> R6 --> R7
         R7 -.-> R1
     end
 
     subgraph L2["컨트롤 — 어떤 통제를 적용할 것인가"]
-        CTRL["<b>SP 800-53</b><br/>컨트롤 카탈로그<br/>20 Families · 1,014 Active"]
-        ASSESS["<b>SP 800-53A</b><br/>평가 절차"]
-        BASE["<b>SP 800-53B</b><br/>기준선 (LOW · MOD · HIGH · PRIVACY)"]
+        CTRL["<span style='color:#fff'><b>SP 800-53</b><br/>컨트롤 카탈로그<br/>20 Families · 1,014 Active</span>"]
+        ASSESS["<span style='color:#333'><b>SP 800-53A</b><br/>평가 절차</span>"]
+        BASE["<span style='color:#333'><b>SP 800-53B</b><br/>기준선 (LOW · MOD · HIGH · PRIVACY)</span>"]
     end
 
     subgraph L3["가이드라인 — 주제별 상세 지침"]
-        SP800["<b>SP 800 시리즈</b><br/>주제별 상세 가이드<br/>CUI · ZTA · 침해대응 · 암호 등"]
+        SP800["<span style='color:#fff'><b>SP 800 시리즈</b><br/>주제별 상세 가이드<br/>CUI · ZTA · 침해대응 · 암호 등</span>"]
     end
 
     subgraph L4["실무 구현 — 어떻게 구현할 것인가"]
-        SP1800["<b>SP 1800 시리즈</b><br/>실무 구현 가이드 (How-To)<br/>아키텍처 · 구성 절차 · 사례"]
+        SP1800["<span style='color:#333'><b>SP 1800 시리즈</b><br/>실무 구현 가이드 (How-To)<br/>아키텍처 · 구성 절차 · 사례</span>"]
     end
 
-    FIPS["<b>FIPS</b><br/>연방 표준<br/><i>의무 준수</i>"]
+    FIPS["<span style='color:#fff'><b>FIPS</b><br/>연방 표준<br/><i>의무 준수</i></span>"]
 
     CSF -- "목표를 컨트롤로 매핑" --> CTRL
     PF -- "프라이버시 컨트롤 연계" --> CTRL
@@ -121,26 +121,26 @@ flowchart TB
     R5 -. "평가 절차 적용" .-> ASSESS
     SP800 -- "구현 예시" --> SP1800
 
-    style L1 fill:none,stroke:#1a73e8,stroke-width:2px,color:#1a73e8
-    style RMF fill:none,stroke:#d32f2f,stroke-width:2px,color:#d32f2f
-    style L2 fill:none,stroke:#e65100,stroke-width:2px,color:#e65100
-    style L3 fill:none,stroke:#2e7d32,stroke-width:2px,color:#2e7d32
-    style L4 fill:none,stroke:#558b2f,stroke-width:2px,color:#558b2f
-    style CSF fill:#1a73e8,stroke:#1558b0,color:#fff
-    style PF fill:#7b1fa2,stroke:#6a1b9a,color:#fff
-    style CTRL fill:#e65100,stroke:#bf360c,color:#fff
-    style ASSESS fill:#fff3e0,stroke:#e65100,color:#333
-    style BASE fill:#fff3e0,stroke:#e65100,color:#333
-    style SP800 fill:#2e7d32,stroke:#1b5e20,color:#fff
-    style SP1800 fill:#c8e6c9,stroke:#2e7d32,color:#333
-    style FIPS fill:#37474f,stroke:#263238,color:#fff
-    style R1 fill:#d32f2f,stroke:#b71c1c,color:#fff
-    style R2 fill:#d32f2f,stroke:#b71c1c,color:#fff
-    style R3 fill:#d32f2f,stroke:#b71c1c,color:#fff
-    style R4 fill:#d32f2f,stroke:#b71c1c,color:#fff
-    style R5 fill:#d32f2f,stroke:#b71c1c,color:#fff
-    style R6 fill:#d32f2f,stroke:#b71c1c,color:#fff
-    style R7 fill:#d32f2f,stroke:#b71c1c,color:#fff
+    style L1 fill:none,stroke:#1a73e8,stroke-width:2px
+    style RMF fill:none,stroke:#d32f2f,stroke-width:2px
+    style L2 fill:none,stroke:#e65100,stroke-width:2px
+    style L3 fill:none,stroke:#2e7d32,stroke-width:2px
+    style L4 fill:none,stroke:#558b2f,stroke-width:2px
+    style CSF fill:#1a73e8,stroke:#1558b0
+    style PF fill:#7b1fa2,stroke:#6a1b9a
+    style CTRL fill:#e65100,stroke:#bf360c
+    style ASSESS fill:#fff3e0,stroke:#e65100
+    style BASE fill:#fff3e0,stroke:#e65100
+    style SP800 fill:#2e7d32,stroke:#1b5e20
+    style SP1800 fill:#c8e6c9,stroke:#2e7d32
+    style FIPS fill:#37474f,stroke:#263238
+    style R1 fill:#d32f2f,stroke:#b71c1c
+    style R2 fill:#d32f2f,stroke:#b71c1c
+    style R3 fill:#d32f2f,stroke:#b71c1c
+    style R4 fill:#d32f2f,stroke:#b71c1c
+    style R5 fill:#d32f2f,stroke:#b71c1c
+    style R6 fill:#d32f2f,stroke:#b71c1c
+    style R7 fill:#d32f2f,stroke:#b71c1c
 ```
 
 > **RMF 7단계**가 NIST 체계를 운영하는 중심 프로세스입니다. 각 단계에서 해당 문서를 참조합니다:  

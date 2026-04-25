@@ -62,31 +62,31 @@ OWASP 프로젝트는 **성숙도**에 따라 분류됩니다:
 ## 핵심 프로젝트 간 관계
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '14px'}}}%%
+%%{init: {'securityLevel': 'loose', 'theme': 'base'}}%%
 flowchart TB
     subgraph L1["위험 식별 — 무엇이 위험한가"]
-        TOP10["<b>Top 10 2025</b><br/>웹 10대 보안 위험"]
-        API10["<b>API Security Top 10</b><br/>API 10대 보안 위험"]
-        LLM10["<b>LLM Top 10</b><br/>LLM/AI 10대 보안 위험"]
+        TOP10["<span style='color:#fff'><b>Top 10 2025</b><br/>웹 10대 보안 위험</span>"]
+        API10["<span style='color:#fff'><b>API Security Top 10</b><br/>API 10대 보안 위험</span>"]
+        LLM10["<span style='color:#fff'><b>LLM Top 10</b><br/>LLM/AI 10대 보안 위험</span>"]
     end
 
     subgraph L2["방어 전략 — 어떻게 방어할 것인가"]
-        PC["<b>Proactive Controls</b><br/>개발자 10대 보안 통제"]
+        PC["<span style='color:#fff'><b>Proactive Controls</b><br/>개발자 10대 보안 통제</span>"]
     end
 
     subgraph L3["검증 표준 — 무엇을 검증할 것인가"]
-        ASVS["<b>ASVS v5.0</b><br/>웹 앱 보안 검증 표준<br/>3 Level"]
-        MASVS["<b>MASVS</b><br/>모바일 앱 보안 검증 표준"]
+        ASVS["<span style='color:#fff'><b>ASVS v5.0</b><br/>웹 앱 보안 검증 표준<br/>3 Level</span>"]
+        MASVS["<span style='color:#fff'><b>MASVS</b><br/>모바일 앱 보안 검증 표준</span>"]
     end
 
     subgraph L4["테스트 및 구현 — 어떻게 검증하고 구현하는가"]
-        WSTG["<b>WSTG</b><br/>웹 보안 테스트 가이드"]
-        MASTG["<b>MASTG</b><br/>모바일 보안 테스트 가이드"]
-        CS["<b>Cheat Sheets</b><br/>91개 구현 가이드"]
+        WSTG["<span style='color:#fff'><b>WSTG</b><br/>웹 보안 테스트 가이드</span>"]
+        MASTG["<span style='color:#fff'><b>MASTG</b><br/>모바일 보안 테스트 가이드</span>"]
+        CS["<span style='color:#333'><b>Cheat Sheets</b><br/>91개 구현 가이드</span>"]
     end
 
     subgraph L5["성숙도 — 조직 보안 수준 평가"]
-        SAMM["<b>SAMM</b><br/>소프트웨어 보증 성숙도 모델"]
+        SAMM["<span style='color:#fff'><b>SAMM</b><br/>소프트웨어 보증 성숙도 모델</span>"]
     end
 
     TOP10 -- "위험 → 방어" --> PC
@@ -97,21 +97,21 @@ flowchart TB
     MASVS -- "검증 → 테스트" --> MASTG
     SAMM -. "조직 수준 평가" .-> ASVS
 
-    style L1 fill:none,stroke:#d32f2f,stroke-width:2px,color:#d32f2f
-    style L2 fill:none,stroke:#e65100,stroke-width:2px,color:#e65100
-    style L3 fill:none,stroke:#1a73e8,stroke-width:2px,color:#1a73e8
-    style L4 fill:none,stroke:#2e7d32,stroke-width:2px,color:#2e7d32
-    style L5 fill:none,stroke:#7b1fa2,stroke-width:2px,color:#7b1fa2
-    style TOP10 fill:#d32f2f,stroke:#b71c1c,color:#fff
-    style API10 fill:#d32f2f,stroke:#b71c1c,color:#fff
-    style LLM10 fill:#d32f2f,stroke:#b71c1c,color:#fff
-    style PC fill:#e65100,stroke:#bf360c,color:#fff
-    style ASVS fill:#1a73e8,stroke:#1558b0,color:#fff
-    style MASVS fill:#1a73e8,stroke:#1558b0,color:#fff
-    style WSTG fill:#2e7d32,stroke:#1b5e20,color:#fff
-    style MASTG fill:#2e7d32,stroke:#1b5e20,color:#fff
-    style CS fill:#c8e6c9,stroke:#2e7d32,color:#333
-    style SAMM fill:#7b1fa2,stroke:#6a1b9a,color:#fff
+    style L1 fill:none,stroke:#d32f2f,stroke-width:2px
+    style L2 fill:none,stroke:#e65100,stroke-width:2px
+    style L3 fill:none,stroke:#1a73e8,stroke-width:2px
+    style L4 fill:none,stroke:#2e7d32,stroke-width:2px
+    style L5 fill:none,stroke:#7b1fa2,stroke-width:2px
+    style TOP10 fill:#d32f2f,stroke:#b71c1c
+    style API10 fill:#d32f2f,stroke:#b71c1c
+    style LLM10 fill:#d32f2f,stroke:#b71c1c
+    style PC fill:#e65100,stroke:#bf360c
+    style ASVS fill:#1a73e8,stroke:#1558b0
+    style MASVS fill:#1a73e8,stroke:#1558b0
+    style WSTG fill:#2e7d32,stroke:#1b5e20
+    style MASTG fill:#2e7d32,stroke:#1b5e20
+    style CS fill:#c8e6c9,stroke:#2e7d32
+    style SAMM fill:#7b1fa2,stroke:#6a1b9a
 ```
 
 ---
