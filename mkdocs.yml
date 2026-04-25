@@ -108,7 +108,7 @@ nav:
           - 도구 및 데이터 소스: NIST/tools.md
   - OWASP:
       - 개요: OWASP/README.md
-      - 위험 분석:
+      - 위험 식별:
           - Top 10 (2025): OWASP/Top10-2025/README.md
           - Top 10 전체 목록: OWASP/top10-catalog.md
       - 보안 검증:
