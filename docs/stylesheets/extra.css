@@ -1,21 +1,150 @@
+/* === Base typography === */
 .md-typeset {
   word-break: keep-all;
   line-height: 1.8;
 }
 
-.md-typeset table:not([class]) th,
-.md-typeset table:not([class]) td {
-  padding: 0.8em 1em;
+/* === Section headings: left accent border === */
+.md-typeset h2 {
+  border-bottom: 2px solid var(--md-primary-fg-color);
+  padding-bottom: 0.3em;
+  margin-top: 2em;
 }
 
+/* === Disclaimer blockquote: admonition-style === */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-accent-fg-color);
+  background: var(--md-admonition-bg-color, rgba(0, 0, 0, 0.025));
+  padding: 0.8em 1.2em;
+  border-radius: 0 0.2rem 0.2rem 0;
+  margin: 1.5em 0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* === Guide hero links: prominent call-to-action === */
+.md-typeset strong > a {
+  display: inline-block;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color) !important;
+  padding: 0.5em 1.2em;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0.5em 0;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.md-typeset strong > a:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* === Tables: interactive and polished === */
+.md-typeset table:not([class]) {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--md-typeset-table-color);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-weight: 600;
+  padding: 0.7em 1em;
+  text-align: left;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.7em 1em;
+  border-top: 1px solid var(--md-typeset-table-color);
+}
+
+.md-typeset table:not([class]) tbody tr {
+  transition: background 0.15s;
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: var(--md-accent-fg-color--transparent, rgba(0, 150, 136, 0.07));
+}
+
+/* === Table "상세" links: pill badges === */
+.md-typeset table:not([class]) td:last-child a {
+  display: inline-block;
+  background: var(--md-accent-fg-color);
+  color: #fff !important;
+  padding: 0.15em 0.7em;
+  border-radius: 1em;
+  font-size: 0.82em;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.md-typeset table:not([class]) td:last-child a:hover {
+  opacity: 0.85;
+}
+
+/* === Details/summary: polished collapsible sections === */
 .md-typeset details {
-  margin-bottom: 1em;
+  border: 1px solid var(--md-typeset-table-color);
+  border-radius: 0.3rem;
+  margin-bottom: 0.8em;
+  overflow: hidden;
 }
 
 .md-typeset details summary {
+  background: var(--md-code-bg-color);
   padding: 0.6em 1em;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.md-typeset details summary:hover {
+  background: var(--md-accent-fg-color--transparent, rgba(0, 150, 136, 0.07));
 }
 
 .md-typeset details[open] > summary {
-  margin-bottom: 0.5em;
+  border-bottom: 1px solid var(--md-typeset-table-color);
+  margin-bottom: 0;
+}
+
+.md-typeset details > *:not(summary) {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/* === Horizontal rules: subtle separators === */
+.md-typeset hr {
+  border: none;
+  border-top: 1px solid var(--md-typeset-table-color);
+  margin: 2em 0;
+}
+
+/* === External links: subtle indicator === */
+.md-typeset a[href^="http"]:not([href*="zer0-kr.github.io"])::after {
+  content: " ↗";
+  font-size: 0.75em;
+  opacity: 0.5;
+}
+
+/* Keep nav and footer links clean */
+.md-nav a::after,
+.md-footer a::after,
+.md-header a::after,
+.md-search-result a::after,
+.md-source a::after,
+.md-typeset table a::after {
+  content: none !important;
+}
+
+/* === Footer nav: clearer previous/next === */
+.md-footer__link {
+  padding: 1em;
 }

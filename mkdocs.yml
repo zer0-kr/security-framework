@@ -93,22 +93,26 @@ nav:
   - 홈: index.md
   - NIST:
       - NIST/README.md
-      - CSF 2.0: NIST/CSF-2.0/README.md
-      - PF 1.0: NIST/PF-1.0/README.md
-      - SP 800-37 (RMF): NIST/SP800-37/README.md
-      - SP 800-53:
-          - NIST/SP800-53/README.md
+      - 프레임워크:
+          - CSF 2.0: NIST/CSF-2.0/README.md
+          - PF 1.0: NIST/PF-1.0/README.md
+      - 컨트롤:
+          - SP 800-37 (RMF): NIST/SP800-37/README.md
+          - SP 800-53: NIST/SP800-53/README.md
           - 평가 절차 (53A): NIST/SP800-53/assessment.md
           - 기준선 LOW: NIST/SP800-53/low.md
           - 기준선 MODERATE: NIST/SP800-53/moderate.md
           - 기준선 HIGH: NIST/SP800-53/high.md
-      - SP 800 전체 목록: NIST/SP800/README.md
-      - SP 1800 전체 목록: NIST/SP1800/README.md
+      - 가이드라인 목록:
+          - SP 800 시리즈: NIST/SP800/README.md
+          - SP 1800 시리즈: NIST/SP1800/README.md
       - 도구 및 데이터 소스: NIST/tools.md
   - OWASP:
       - OWASP/README.md
-      - Top 10 (2025): OWASP/Top10-2025/README.md
-      - ASVS v5.0: OWASP/ASVS/README.md
-      - WSTG v4.2: OWASP/WSTG/README.md
+      - 위험 분석:
+          - Top 10 (2025): OWASP/Top10-2025/README.md
+          - Top 10 전체 목록: OWASP/top10-catalog.md
+      - 보안 검증:
+          - ASVS v5.0: OWASP/ASVS/README.md
+          - WSTG v4.2: OWASP/WSTG/README.md
       - 프로젝트 목록: OWASP/projects.md
-      - Top 10 전체 목록: OWASP/top10-catalog.md
