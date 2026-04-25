@@ -97,12 +97,12 @@ nav:
           - CSF 2.0: NIST/CSF-2.0/README.md
           - PF 1.0: NIST/PF-1.0/README.md
       - 컨트롤:
-          - SP 800-37 (RMF): NIST/SP800-37/README.md
+          - SP 800-37: NIST/SP800-37/README.md
           - SP 800-53: NIST/SP800-53/README.md
-          - 평가 절차 (53A): NIST/SP800-53/assessment.md
-          - 기준선 LOW: NIST/SP800-53/low.md
-          - 기준선 MODERATE: NIST/SP800-53/moderate.md
-          - 기준선 HIGH: NIST/SP800-53/high.md
+          - SP 800-53A: NIST/SP800-53/assessment.md
+          - SP 800-53B LOW: NIST/SP800-53/low.md
+          - SP 800-53B MODERATE: NIST/SP800-53/moderate.md
+          - SP 800-53B HIGH: NIST/SP800-53/high.md
       - 가이드라인 목록:
           - SP 800 시리즈: NIST/SP800/README.md
           - SP 1800 시리즈: NIST/SP1800/README.md
