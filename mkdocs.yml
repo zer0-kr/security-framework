@@ -1,0 +1,98 @@
+site_name: Security Framework
+site_url: https://zer0-kr.github.io/security-framework/
+site_description: 글로벌 정보보호 프레임워크 한국어 레퍼런스
+site_author: zer0-kr
+
+repo_name: zer0-kr/security-framework
+repo_url: https://github.com/zer0-kr/security-framework
+
+copyright: >-
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> |
+  이 프로젝트는 NIST/OWASP 공식 자료가 아닌 비공식 학습 자료입니다
+
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+  font:
+    text: Noto Sans KR
+    code: Roboto Mono
+  icon:
+    logo: material/shield-lock
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - toc.follow
+
+hooks:
+  - hooks/details_markdown.py
+
+plugins:
+  - search:
+      lang:
+        - ko
+        - en
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+
+nav:
+  - 홈: index.md
+  - NIST:
+      - NIST/README.md
+      - CSF 2.0: NIST/CSF-2.0/README.md
+      - PF 1.0: NIST/PF-1.0/README.md
+      - SP 800-37 (RMF): NIST/SP800-37/README.md
+      - SP 800-53:
+          - NIST/SP800-53/README.md
+          - 평가 절차 (53A): NIST/SP800-53/assessment.md
+          - 기준선 LOW: NIST/SP800-53/low.md
+          - 기준선 MODERATE: NIST/SP800-53/moderate.md
+          - 기준선 HIGH: NIST/SP800-53/high.md
+      - SP 800 전체 목록: NIST/SP800/README.md
+      - SP 1800 전체 목록: NIST/SP1800/README.md
+      - 도구 및 데이터 소스: NIST/tools.md
+  - OWASP:
+      - OWASP/README.md
+      - Top 10 (2025): OWASP/Top10-2025/README.md
+      - ASVS v5.0: OWASP/ASVS/README.md
+      - WSTG v4.2: OWASP/WSTG/README.md
+      - 프로젝트 목록: OWASP/projects.md
+      - Top 10 전체 목록: OWASP/top10-catalog.md
