@@ -104,7 +104,8 @@ nav:
       - 가이드라인 목록:
           - SP 800 시리즈: NIST/SP800/README.md
           - SP 1800 시리즈: NIST/SP1800/README.md
-      - 도구 및 데이터 소스: NIST/tools.md
+      - 자동화 도구:
+          - 도구 및 데이터 소스: NIST/tools.md
   - OWASP:
       - 개요: OWASP/README.md
       - 위험 분석:
