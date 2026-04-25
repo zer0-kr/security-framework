@@ -53,15 +53,15 @@
 .md-typeset table:not([class]) {
   border-collapse: separate;
   border-spacing: 0;
-  border: 1px solid var(--md-typeset-table-color);
+  border: 1px solid #30363d;
   border-radius: 0.3rem;
   overflow: hidden;
   width: 100%;
 }
 
 .md-typeset table:not([class]) th {
-  background: linear-gradient(135deg, #0d1117 0%, #161b22 40%, #1a237e 100%);
-  color: #fff;
+  background: #161b22;
+  color: #e6edf3;
   font-weight: 600;
   padding: 0.7em 1em;
   text-align: left;
@@ -69,7 +69,7 @@
 
 .md-typeset table:not([class]) td {
   padding: 0.7em 1em;
-  border-top: 1px solid var(--md-typeset-table-color);
+  border-top: 1px solid #30363d;
 }
 
 .md-typeset table:not([class]) tbody tr {
