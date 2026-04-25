@@ -183,6 +183,22 @@
   color: inherit !important;
 }
 
+/* === Back to top: floating bottom-right button === */
+.md-top {
+  position: fixed !important;
+  bottom: 1.5rem !important;
+  right: 1.5rem !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  background: #161b22 !important;
+  color: #e6edf3 !important;
+  border-radius: 2rem !important;
+  padding: 0.5rem 1rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
 /* === Footer nav spacing === */
 .md-footer__link {
   padding: 1em;
