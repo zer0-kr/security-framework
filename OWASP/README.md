@@ -171,6 +171,16 @@ flowchart TB
 
 ---
 
+## 자동화 도구
+
+OWASP 데이터를 프로그래밍 방식으로 조회하거나 AI 에이전트와 연동할 수 있는 도구들은 [자동화 도구](./tools.md) 페이지를 참고하세요.
+
+| 도구 | 설명 |
+|------|------|
+| **[owasp-mcp](https://github.com/zer0-kr/owasp-mcp)** | OWASP 전체 통합 MCP 서버 — 24개 도구, 1099+ 데이터, NVD 실시간 연동, STRIDE 위협 모델링, 컴플라이언스 매핑 |
+
+---
+
 ## 참고 링크
 
 | 리소스 | URL |
@@ -179,5 +189,6 @@ flowchart TB
 | 프로젝트 목록 | https://owasp.org/projects/ |
 | GitHub | https://github.com/OWASP |
 | Cheat Sheet Series | https://cheatsheetseries.owasp.org |
+| OWASP MCP 서버 | https://github.com/zer0-kr/owasp-mcp |
 | OWASP Seoul Chapter | https://owasp.org/www-chapter-seoul/ |
 | OWASP Slack | https://owasp.org/slack/invite |

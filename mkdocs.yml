@@ -116,3 +116,5 @@ nav:
           - WSTG v4.2: OWASP/WSTG/README.md
       - 프로젝트:
           - 목록: OWASP/projects.md
+      - 자동화 도구:
+          - 도구 및 MCP 서버: OWASP/tools.md
