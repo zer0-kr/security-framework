@@ -33,7 +33,8 @@ OWASP(Open Worldwide Application Security Project)의 애플리케이션 보안 
 | **Top 10 2025** | 웹 10대 보안 위험 — 2025년 공식 릴리스 | [상세](./OWASP/Top10-2025/README.md) |
 | **ASVS v5.0** | 애플리케이션 보안 검증 표준 — 17 챕터, 345 요구사항, 3 Level | [상세](./OWASP/ASVS/README.md) |
 | **WSTG v4.2** | 웹 보안 테스트 가이드 — 12 카테고리, 128 테스트 케이스 | [상세](./OWASP/WSTG/README.md) |
-| **프로젝트 목록** | Flagship 15개 + Production 11개 + 한국어 요약 | [상세](./OWASP/projects.md) |
+| **프로젝트 목록** | Flagship 15 + Production 11 + Lab + Incubator | [상세](./OWASP/projects.md) |
+| **Top 10 전체 목록** | 26개 도메인별 Top 10 프로젝트 모음 | [상세](./OWASP/top10-variants.md) |
 
 ## 기여
 

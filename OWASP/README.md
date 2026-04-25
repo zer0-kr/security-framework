@@ -40,8 +40,9 @@ Step 1              Step 2              Step 3              Step 4
 
 > **Step 1~2까지 읽으면** OWASP 체계의 핵심을 이해한 것입니다. Step 3~4는 실무 적용 시 참고하세요.
 
-추가로 전체 프로젝트 목록이 필요하면:
-- [OWASP 주요 프로젝트 목록](./projects.md) — Flagship/Production 프로젝트 + 한국어 요약
+추가로:
+- [OWASP 주요 프로젝트 목록](./projects.md) — Flagship/Production/Lab/Incubator 프로젝트
+- [Top 10 프로젝트 전체 목록](./top10-variants.md) — 26개 도메인별 Top 10 모음
 
 ---
 
