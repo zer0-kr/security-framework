@@ -1,3 +1,26 @@
+/* === Header: dark premium gradient === */
+.md-header {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 40%, #1a237e 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.md-tabs {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
+}
+
+.md-search__form {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.md-search__form:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 /* === Base typography === */
 .md-typeset {
   word-break: keep-all;
