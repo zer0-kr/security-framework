@@ -39,7 +39,6 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
-    - navigation.indexes
     - navigation.path
     - navigation.top
     - navigation.footer
@@ -93,7 +92,7 @@ extra_css:
 nav:
   - 홈: index.md
   - NIST:
-      - NIST/README.md
+      - 개요: NIST/README.md
       - 프레임워크:
           - CSF 2.0: NIST/CSF-2.0/README.md
           - PF 1.0: NIST/PF-1.0/README.md
@@ -109,7 +108,7 @@ nav:
           - SP 1800 시리즈: NIST/SP1800/README.md
       - 도구 및 데이터 소스: NIST/tools.md
   - OWASP:
-      - OWASP/README.md
+      - 개요: OWASP/README.md
       - 위험 분석:
           - Top 10 (2025): OWASP/Top10-2025/README.md
           - Top 10 전체 목록: OWASP/top10-catalog.md
