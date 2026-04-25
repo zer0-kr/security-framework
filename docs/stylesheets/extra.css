@@ -1,6 +1,7 @@
 /* === Base typography === */
 .md-typeset {
   word-break: keep-all;
+  overflow-wrap: normal;
   line-height: 1.8;
 }
 
