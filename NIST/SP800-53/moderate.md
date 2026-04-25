@@ -1,4 +1,4 @@
-# SP 800-53 MODERATE 기준선 체크리스트
+# SP 800-53 MODERATE 체크리스트
 
 ## 개요
 
